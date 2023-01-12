@@ -1,10 +1,19 @@
 import React from "react";
 import imagem from "../../../assets/tela_principal.png";
-import { FlatList, Platform, ScrollView, StatusBar, StyleSheet, Switch, Text, TouchableWithoutFeedback, View, Image, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity, StatusBar } from "react-native";
 
 function TelaPrincipal() {
   return (
-    <View style={estilos.main_view}>
+      <View style={estilos.main_view}>
+      
+      <StatusBar
+        barStyle = "dark-content"
+        hidden = {false}
+        backgroundColor = "#0066CC"
+        translucent = {false}
+        networkActivityIndicatorVisible = {true}
+      />
+
       <Image source={imagem} style={estilos.imagem} />
       <Text style={estilos.h1}>Todas as suas compras num só app!</Text>
       <Text style={estilos.h2}>Venda seus produtos da maneira mais inteligente e rápida para obter dinheiro imediato e uma consciência mais limpa.</Text>
