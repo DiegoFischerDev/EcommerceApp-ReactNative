@@ -1,15 +1,5 @@
 import React from 'react'
-import imagem from '../../../assets/tela_principal.png'
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-  StatusBar,
-  Linking,
-  TextInput,
-  ScrollView
+import {StyleSheet, Text, View, TouchableOpacity, StatusBar, Linking, TextInput,
 } from 'react-native'
 
 import MaterialCommunityIcon from "react-native-vector-icons/MaterialCommunityIcons";
