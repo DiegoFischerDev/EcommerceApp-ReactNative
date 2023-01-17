@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
-import imageCelular1 from "../../../../assets/celular_1.png"
+import imageCelular1 from "../../../assets/celular_1.png"
 
 
 
@@ -29,14 +29,17 @@ export default HorizontalCard;
 const estilos = StyleSheet.create({
 
   cartao: {
-    marginVertical: 40,
-    marginHorizontal: 15,
+    marginBottom: 10,
+    marginTop:30,
+    marginLeft: 15,
     backgroundColor: 'white',
     width: 350,
     height: 180,
     padding: 17,
     borderRadius: 10,
     flexDirection: 'row',
+    borderColor: '#FFA959',
+    borderWidth: 1,
   },
 
   cartaoButton: {
