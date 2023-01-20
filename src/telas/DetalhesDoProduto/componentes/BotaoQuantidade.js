@@ -1,0 +1,42 @@
+import React from 'react'
+import { StyleSheet, View, Text, TouchableOpacity} from 'react-native'
+
+
+
+const BotaoQuantidade = () => {
+  return (
+
+    <View style={estilos.qtdview}>
+      <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 20}}>-</Text></TouchableOpacity>
+      <Text style={{fontSize: 16, marginHorizontal: 13}}>2</Text>
+      <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 20}}>+</Text></TouchableOpacity>
+    </View>
+
+  )
+}
+
+export default BotaoQuantidade
+
+const estilos = StyleSheet.create({
+
+  qtdview: {
+    flexDirection:'row',
+    backgroundColor: '#D9D9D9',
+    padding: 7,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: "flex-start",
+    maxWidth: 160,
+  },
+
+  qtdbutton: {
+    width: 35,
+    height: 35,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+})

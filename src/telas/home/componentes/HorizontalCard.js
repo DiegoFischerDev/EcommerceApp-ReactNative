@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
-import imageCelular1 from "../../../assets/celular_1.png"
+import imageCelular1 from "../../../../assets/celular_1.png"
 
 
 

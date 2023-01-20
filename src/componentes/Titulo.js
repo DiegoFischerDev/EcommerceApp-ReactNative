@@ -1,5 +1,5 @@
 import React from "react";
-import {StyleSheet, View, Text} from "react-native";
+import {StyleSheet, View, Text, TouchableOpacity} from "react-native";
 
 const Titulo = ({TituloText}) => {
 
@@ -7,7 +7,9 @@ const Titulo = ({TituloText}) => {
 
     <View style={estilos.view2}>
       <Text style={{ fontWeight: 'bold', fontSize: 16 }}>{TituloText}</Text>
-      <Text style={{ fontSize: 14, color: '#FF7A00' }} onPress={() => Linking.openURL('http://###')}>Ver tudo</Text>
+      <TouchableOpacity onPress={() => {}}>
+        <Text style={{color:'orange', fontSize:14}}>Ver Tudo</Text>
+      </TouchableOpacity>
     </View>
 
   )

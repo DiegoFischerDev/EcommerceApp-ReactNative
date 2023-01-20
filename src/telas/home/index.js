@@ -2,11 +2,12 @@ import React from 'react'
 import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image,} from 'react-native'
 import oferta1 from '../../../assets/oferta_1.png'
 import oferta2 from '../../../assets/oferta_2.png'
-import HorizontalCard from './HorizontalCard'
 import Titulo from '../../componentes/Titulo'
 import StatusB from '../../componentes/StatusB'
-import HeaderBemVindo from './HeaderBemVindo'
-import Ofertas from './Oferta'
+import HorizontalCard from './componentes/HorizontalCard'
+import HeaderBemVindo from './componentes/HeaderBemVindo'
+import Ofertas from './componentes/Oferta'
+import { anuncios } from "../../mocks/anuncios";
 
 const Home = () => {
   return (
@@ -18,9 +19,11 @@ const Home = () => {
 
       <View>
         <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-          <HorizontalCard titulo={'Troque e Economize'} descricao={'Desfrute de uma ótima economia Desfrute de uma ótima economia'}/>
-          <HorizontalCard titulo={'Troque e Economize'} descricao={'Desfrute de uma ótima economia Desfrute de uma ótima economia'}/>
-          <HorizontalCard titulo={'Troque e Economize'} descricao={'Desfrute de uma ótima economia Desfrute de uma ótima economia'}/>  
+          {anuncios?.map((anuncios, indice) => {
+            return (
+                    <HorizontalCard titulo={anuncios.titulo} descricao={anuncios.descricao} key={indice} />
+                    )
+          })}
         </ScrollView>
       </View>
 

@@ -10,13 +10,14 @@ import Header from '../../componentes/Header'
 import StatusB from '../../componentes/StatusB'
 import Titulo from '../../componentes/Titulo'
 import ItensRecomendados from '../../componentes/ItensRecomendados'
+import { produtos } from '../../mocks/produtos'
 
 const Loja = () => {
   return (
     
     <SafeAreaView style={{ margin: 20 }}>
       <StatusB />
-      <ScrollView showsVerticalScrollIndicator={false}>
+      
         <Header />
         <Titulo TituloText={"Comprar por Categoria"} />
         <View style={estilos.view3}>
@@ -27,13 +28,16 @@ const Loja = () => {
         </View>
         <Titulo TituloText={"Itens Recomendados"} />
 
-        <ItensRecomendados imagem1={modelo1} legenda1={"Camisa Regular Fit"} preço1={"R$100"} imagem2={modelo1} legenda2={"Camisa Regular"} preço2={"R$200"} />
-
-        <ItensRecomendados imagem1={modelo1} legenda1={"Camisa Regular Fit"} preço1={"R$100"} imagem2={modelo1} legenda2={"Camisa Regular"} preço2={"R$200"} />
-
-        <ItensRecomendados imagem1={modelo1} legenda1={"Camisa Regular Fit"} preço1={"R$100"} imagem2={modelo1} legenda2={"Camisa Regular"} preço2={"R$200"} />
-
+      <ScrollView showsVerticalScrollIndicator={false} scrollEventThrottle={0} >
+        <View style={estilos.view8}>
+        {produtos?.map((produtos, indice) => {
+            return (
+                    <ItensRecomendados legenda={produtos.legenda} preço={produtos.preço} review={produtos.review} key={indice} />
+                    )
+          })}
+        </View>
       </ScrollView>
+
     </SafeAreaView>
   )
 }
@@ -55,11 +59,6 @@ const estilos = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
     paddingBottom: 20
-
-    // shadowColor: '#171717',
-    // shadowOffset: {width: -2, height: 4},
-    // shadowOpacity: 0.2,
-    // shadowRadius: 3,
   },
 
   view5: {
@@ -89,5 +88,13 @@ const estilos = StyleSheet.create({
   view7: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-  }
+  },
+
+  view8: {
+    flexWrap: "wrap",
+    flexDirection:'row',
+    justifyContent:'space-between',
+    marginBottom:250
+  },
+
 })

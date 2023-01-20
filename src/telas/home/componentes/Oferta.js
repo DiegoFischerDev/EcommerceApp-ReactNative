@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import cosmeticos from '../../../assets/cosmeticos.png'
+import cosmeticos from '../../../../assets/cosmeticos.png'
 
 const Ofertas = () => {
 

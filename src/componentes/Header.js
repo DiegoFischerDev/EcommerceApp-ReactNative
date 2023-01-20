@@ -1,6 +1,6 @@
 import React from "react";
-import {StyleSheet, View, TextInput,} from "react-native";
-import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {StyleSheet, View, TextInput, TouchableOpacity} from "react-native";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Header = () => {
 
@@ -11,10 +11,18 @@ const Header = () => {
       <TextInput
         style={{ width: '90%', height: '100%' }}
         placeholder="Faça sua busca aqui"
+        keyboardType="text" // "numeric"
+        defaultValue=""
+        onChangeText={() => {}}
+        placeholderTextColor={'#CACACA'}
       />
-      <MaterialCommunityIcon name="google" size={25} color="#D9D9D9" />
+      <TouchableOpacity>
+        <Ionicons name="search-outline" size={25} color="#D9D9D9" />
+      </TouchableOpacity>
     </View>
-    <MaterialCommunityIcon name="car" size={25} color="#000000" onPress={() => Linking.openURL('http://###')} />
+    <TouchableOpacity>
+      <Ionicons name="cart-outline" size={30} color="black" />
+    </TouchableOpacity>
   </View>
 
   )
@@ -30,7 +38,7 @@ const estilos = StyleSheet.create({
     marginTop: 30,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
 
   inputBox: {
@@ -42,7 +50,18 @@ const estilos = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 23
+    paddingHorizontal: 23,
+
+    backgroundColor: 'white',
+    shadowColor: "#000",
+    shadowOffset: {
+	  width: 0,
+	  height: 1,
+    },
+    shadowOpacity: 0.20,
+    shadowRadius: 1.41,
+
+    elevation: 2,
   },
 
 })

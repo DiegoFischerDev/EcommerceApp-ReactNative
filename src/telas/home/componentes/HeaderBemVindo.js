@@ -1,6 +1,6 @@
 import React from "react";
 import {StyleSheet, View, Text, Image} from "react-native";
-import usuarioIcone from '../../../assets/usuario_icone.png'
+import usuarioIcone from '../../../../assets/usuario_icone.png'
 
 const HeaderBemVindo = ({UsuarioName}) => {
 
