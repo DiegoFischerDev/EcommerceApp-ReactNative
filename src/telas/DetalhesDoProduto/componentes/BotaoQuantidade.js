@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, View, Text, TouchableOpacity} from 'react-native'
 
 
 
 const BotaoQuantidade = () => {
+
+  const [numItens, setNumItens] = useState(1);
+
   return (
 
     <View style={estilos.qtdview}>
-      <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 20}}>-</Text></TouchableOpacity>
-      <Text style={{fontSize: 16, marginHorizontal: 13}}>2</Text>
-      <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 20}}>+</Text></TouchableOpacity>
+      <TouchableOpacity 
+        onPress={() => {
+          if (numItens > 1) {
+            setNumItens(numItens - 1)
+          }
+        }}
+        style={estilos.qtdbutton}><Text style={{fontSize: 20}}>-</Text>
+      </TouchableOpacity>
+
+      <Text style={{fontSize: 16, marginHorizontal: 13}}>{numItens}</Text>
+
+      <TouchableOpacity
+        onPress={() => {
+          setNumItens(numItens + 1)
+        }}
+        style={estilos.qtdbutton}>
+        <Text style={{fontSize: 20}}>+</Text>
+      </TouchableOpacity>
     </View>
 
   )

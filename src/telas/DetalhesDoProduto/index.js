@@ -3,22 +3,33 @@ import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image, TouchableOpaci
 import StatusB from '../../componentes/StatusB'
 import BotaoLaranja from './componentes/BotaoLaranja'
 import BotaoQuantidade from './componentes/BotaoQuantidade'
-import Carousel from './componentes/Carousel'
+import Carrossel from './componentes/Carrossel'
 import ProductDescription from './componentes/ProductDescription'
 import SelecionarTamanho from './componentes/SelecionarTamanho'
+import modelo1 from "../../../assets/modelo_1.png";
+import modelo2 from "../../../assets/modelo_2.png";
+import modelo3 from "../../../assets/modelo_3.png";
+import modelo4 from "../../../assets/modelo_4.png";
 
-
+const imagens = [modelo1, modelo2, modelo3, modelo4];
 
 
 const DetalhesDoProduto = () => {
 
   const [TamanhoSelecionado, setTamanhoSelecionado] = useState("");
+  const [imagemAtiva, setImagemAtiva] = useState(0);
 
   return (
 
     <SafeAreaView >
       <StatusB />
-      <Carousel />
+
+      <Carrossel
+        imagens={imagens}
+        imagemAtiva={imagemAtiva}
+        setImagemAtiva={setImagemAtiva}
+      />
+
       <ProductDescription legenda={'Camisa de Algodão Regular Fit (Masculina)'} preço={'100,00'} review={'4.9'} reviewqtd={'83'} />
 
       <Text style={{marginVertical: 18, marginLeft:21, fontSize: 16}}>Selecionar Tamanho</Text>

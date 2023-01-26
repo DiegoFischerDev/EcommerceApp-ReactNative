@@ -1,16 +1,21 @@
 import React from 'react'
 import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image, Dimensions, TouchableOpacity} from 'react-native'
-import modelo1 from "../../../../assets/modelo_1.png";
-import modelo2 from "../../../../assets/modelo_2.png";
-import modelo3 from "../../../../assets/modelo_3.png";
-import modelo4 from "../../../../assets/modelo_4.png";
 
 
 const WIDTH = Dimensions.get('window').width;
-const imagens = [modelo1, modelo2, modelo3, modelo4];
 
+const Carrossel = ({ imagens, imagemAtiva, setImagemAtiva }) => {
 
-const Carousel = () => {
+  const handleOnChange = (nativeEvent) => {
+    if (nativeEvent) {
+        const slide = Math.ceil(nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width);
+
+        if (slide != imagemAtiva) {
+            setImagemAtiva(slide);
+        }
+    }
+  }
+
   return (
 
     <SafeAreaView>
@@ -19,7 +24,7 @@ const Carousel = () => {
         scrollEventThrottle={0}
         pagingEnabled
         horizontal
-        onScroll={() => {}}
+        onScroll={({ nativeEvent }) => handleOnChange(nativeEvent)}
         style={estilos.wrap}>
 
         {
@@ -36,7 +41,7 @@ const Carousel = () => {
 
         {
           imagens.map((imagem, index) => {
-            return <Text key={index} style={index == 2 ? [estilos.dot, {color:'#FFA959'}] : estilos.dot}>●</Text>
+            return <Text key={index} style={index === imagemAtiva ? [estilos.dot, {color:'#FFA959'}] : estilos.dot}>●</Text>
           })
         }
 
@@ -46,7 +51,7 @@ const Carousel = () => {
 
         {
           imagens.map((imagem, index) => {
-            return <TouchableOpacity onPress={() => {}} key={index} ><Image source={imagem} style={(index == 2) ? [estilos.MiniImage, estilos.MiniImageSelected] : estilos.MiniImage}></Image></TouchableOpacity>
+            return <TouchableOpacity onPress={() => {}} key={index} ><Image source={imagem} style={(index === imagemAtiva) ? [estilos.MiniImage, estilos.MiniImageSelected] : estilos.MiniImage}></Image></TouchableOpacity>
           })
         }
 
@@ -57,7 +62,7 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default Carrossel
 
 const estilos = StyleSheet.create({
 
