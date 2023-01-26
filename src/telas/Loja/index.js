@@ -4,7 +4,6 @@ import categoria1 from '../../../assets/cartao_compras_icon_1.png'
 import categoria2 from '../../../assets/cartao_compras_icon_2.png'
 import categoria3 from '../../../assets/cartao_compras_icon_3.png'
 import categoria4 from '../../../assets/cartao_compras_icon_4.png'
-import modelo1 from '../../../assets/modelo_1.png'
 import MiniCard from '../../componentes/MiniCard'
 import Header from '../../componentes/Header'
 import StatusB from '../../componentes/StatusB'
@@ -30,11 +29,13 @@ const Loja = () => {
 
       <ScrollView showsVerticalScrollIndicator={false} scrollEventThrottle={0} >
         <View style={estilos.view8}>
-        {produtos?.map((produtos, indice) => {
+
+          {produtos?.map((produtos, indice) => {
             return (
-                    <ItensRecomendados legenda={produtos.legenda} preço={produtos.preço} review={produtos.review} key={indice} />
-                    )
+             <ItensRecomendados legenda={produtos.legenda} preço={produtos.preço} review={produtos.review} key={indice} />
+            )
           })}
+
         </View>
       </ScrollView>
 

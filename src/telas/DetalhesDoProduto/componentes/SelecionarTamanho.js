@@ -1,27 +1,16 @@
-import React from 'react'
-import { StyleSheet, View, Text, TouchableOpacity} from 'react-native'
+import React, { useState } from 'react'
+import { StyleSheet, Text, TouchableOpacity} from 'react-native'
 
-const tamanhos = ['P', 'M', 'G', 'GG', 'XG'];
 
-const SelecionarTamanho = () => {
+
+const SelecionarTamanho = ({ButtonLabel, TamanhoSelecionado, setTamanhoSelecionado}) => {
   return (
 
-    <View>
+        <TouchableOpacity style={(TamanhoSelecionado === ButtonLabel) ? [estilos.square, {backgroundColor:'#FFA959'}] : estilos.square} onPress={() => { setTamanhoSelecionado(ButtonLabel) }}>
 
-      <Text style={{marginVertical: 18, marginLeft:21, fontSize: 16}}>Selecionar Tamanho</Text>
+          <Text style={estilos.text}>{ButtonLabel}</Text>
 
-      <View style={{flexDirection:'row'}}>
-
-        {
-          tamanhos.map((tamanho, index) => {
-            return (
-              <TouchableOpacity style={(index == 1) ? [estilos.tamanhos, estilos.tamanhosSelected] : estilos.tamanhos} key={index}><Text style={estilos.tamanho}>{tamanho}</Text></TouchableOpacity>
-            )
-          })
-        }
-
-      </View>
-    </View>
+        </TouchableOpacity>
 
   )
 }
@@ -30,7 +19,7 @@ export default SelecionarTamanho
 
 const estilos = StyleSheet.create({
 
-  tamanhos: {
+  square: {
     width: 40,
     height: 40,
     marginLeft: 21,
@@ -41,11 +30,7 @@ const estilos = StyleSheet.create({
     alignItems: 'center',
   },
 
-  tamanhosSelected: {
-    backgroundColor:'#FFA959',
-  },
-
-  tamanho: {
+  text: {
     fontWeight: 'bold',
     fontSize:'16',
   },
