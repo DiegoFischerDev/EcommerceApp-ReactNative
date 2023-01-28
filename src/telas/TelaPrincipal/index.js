@@ -1,8 +1,11 @@
 import React from "react";
 import imagem from "../../../assets/tela_principal.png";
 import { StyleSheet, Text, View, Image, TouchableOpacity, StatusBar } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 
 function TelaPrincipal() {
+  const navigation = useNavigation();
+
   return (
       <View style={estilos.main_view}>
       
@@ -19,10 +22,10 @@ function TelaPrincipal() {
       <Text style={estilos.h2}>Venda seus produtos da maneira mais inteligente e rápida para obter dinheiro imediato e uma consciência mais limpa.</Text>
 
       <View style={estilos.view_buttons}>
-        <TouchableOpacity style={estilos.button_login}>
+        <TouchableOpacity style={estilos.button_login} onPress={() => { navigation.navigate('Sign In') }}>
           <Text style={estilos.color_white}>Log In</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={estilos.button_signup}>
+        <TouchableOpacity style={estilos.button_signup} onPress={() => { navigation.navigate('Sign In') }}>
           <Text style={estilos.color_orange}>Sign Up</Text>
         </TouchableOpacity>
       </View>

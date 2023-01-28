@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { SafeAreaView, ScrollView, StyleSheet, View, } from 'react-native'
 import categoria1 from '../../../assets/cartao_compras_icon_1.png'
 import categoria2 from '../../../assets/cartao_compras_icon_2.png'
@@ -9,9 +9,14 @@ import Header from '../../componentes/Header'
 import StatusB from '../../componentes/StatusB'
 import Titulo from '../../componentes/Titulo'
 import ItensRecomendados from '../../componentes/ItensRecomendados'
-import { produtos } from '../../mocks/produtos'
+// import { produtos } from '../../mocks/produtos'
+import { obterProdutos } from '../../serviços'
+import { useProdutos } from '../../hooks/useProdutos'
 
 const Loja = () => {
+
+  const [produtos] = useProdutos([]);
+
   return (
     
     <SafeAreaView style={{ margin: 20 }}>

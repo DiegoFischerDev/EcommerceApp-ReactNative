@@ -1,0 +1,59 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "legenda": "Camisa Longa Branca",
+      "preço": 200,
+      "review": 5,
+      "reviewqtd": 80
+    },
+    {
+      "id": 2,
+      "legenda": "Camisa Longa Branca",
+      "preço": 100,
+      "review": 4.9,
+      "reviewqtd": 80
+    },
+    {
+      "id": 3,
+      "legenda": "Camisa Longa Branca",
+      "preço": 100,
+      "review": 4.9,
+      "reviewqtd": 80
+    },
+    {
+      "id": 4,
+      "legenda": "Camisa Longa Branca",
+      "preço": 100,
+      "review": 4.9,
+      "reviewqtd": 80
+    },
+    {
+      "id": 5,
+      "legenda": "Camisa Longa Branca",
+      "preço": 100,
+      "review": 4.9,
+      "reviewqtd": 80
+    }
+  
+  ],
+
+  "anuncios": [
+    {
+      "id": 1,
+      "titulo": "Troque e Economize",
+      "descricao": "Desfrute de uma ótima economia"
+    },
+    {
+      "id": 2,
+      "titulo": "Curso React JS",
+      "descricao": "Segundas e Quartas"
+    },
+    {
+      "id": 3,
+      "titulo": "Curso Java Experience",
+      "descricao": "Depois do Carnaval"
+    }
+  ]
+  
+}
