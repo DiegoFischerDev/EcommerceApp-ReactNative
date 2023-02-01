@@ -1,15 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, View,  Text, TouchableOpacity,  TextInput } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
+import FinalizarCompraModal from './FinalizarCompraModal';
 
 const ResumoCompra = () => {
 
   const navigation = useNavigation();
 
-  function FinalizarCompra() {
-    alert("Compra Finalizada")
-    navigation.navigate("Home")
-  }
+  const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <View >
@@ -57,10 +55,10 @@ const ResumoCompra = () => {
         <Text style={{ fontSize: 16, fontWeight: '700' }}>R$ 2.520</Text>
       </View>
 
-      <TouchableOpacity onPress={FinalizarCompra} style={estilos.orangeButton}>
-        <Text style={{ color: 'white', fontSize: 14, fontWeight: '700' }}>
-          Finalizar Compra
-        </Text>
+      <FinalizarCompraModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
+
+      <TouchableOpacity style={estilos.orangeButton} onPress={() => setModalVisible(true)}>
+        <Text style={estilos.textoBotao}>Finalizar Compra</Text>
       </TouchableOpacity>
     </View>
   )
@@ -119,4 +117,10 @@ const estilos = StyleSheet.create({
     alignSelf: 'center',
     marginBottom: 60
   },
+
+  textoBotao: {
+    textAlign: "center",
+    color: "#FFFFFF",
+    fontWeight: "bold"
+},
 })
