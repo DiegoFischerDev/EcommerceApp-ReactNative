@@ -7,9 +7,12 @@ import StatusB from '../../componentes/StatusB'
 import HorizontalCard from './componentes/HorizontalCard'
 import HeaderBemVindo from './componentes/HeaderBemVindo'
 import Ofertas from './componentes/Oferta'
-import { anuncios } from "../../mocks/anuncios";
+import { useAnuncios } from '../../hooks/useAnuncios'
 
 const Home = () => {
+
+  const [anuncios] = useAnuncios([]);
+
   return (
 
     <SafeAreaView style={{padding:21}}>

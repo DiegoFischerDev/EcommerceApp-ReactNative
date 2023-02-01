@@ -1,11 +1,15 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity,} from 'react-native';
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { useNavigation } from '@react-navigation/native';
 
 const Header = () => {
+
+  const navigation = useNavigation();
+
   return (
         <View style={estilos.header}>
-          <TouchableOpacity style={estilos.backButton}><Ionicons name="arrow-back-outline" size={22} color="black" /></TouchableOpacity>
+          <TouchableOpacity style={estilos.backButton} onPress={() => { navigation.navigate("Loja") }}><Ionicons name="arrow-back-outline" size={22} color="black" /></TouchableOpacity>
           <Text style={{fontSize: 14, fontWeight: 'bold'}}>Minhas Compras</Text>
           <Text style={{fontSize: 12, color:'#D82F2F'}}>Limpar</Text>
         </View>

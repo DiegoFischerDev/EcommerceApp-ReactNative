@@ -1,10 +1,15 @@
 import React from 'react'
 import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image, Dimensions, TouchableOpacity} from 'react-native'
+import Ionicons from "react-native-vector-icons/Ionicons";
+import { useNavigation } from '@react-navigation/native';
+
 
 
 const WIDTH = Dimensions.get('window').width;
 
 const Carrossel = ({ imagens, imagemAtiva, setImagemAtiva }) => {
+
+  const navigation = useNavigation();
 
   const handleOnChange = (nativeEvent) => {
     if (nativeEvent) {
@@ -19,6 +24,12 @@ const Carrossel = ({ imagens, imagemAtiva, setImagemAtiva }) => {
   return (
 
     <SafeAreaView>
+
+      <View style={estilos.topButtons}>
+        <TouchableOpacity onPress={() => { navigation.navigate("Loja") }}><Ionicons name="arrow-back-outline" size={30} color="black" /></TouchableOpacity>
+        <TouchableOpacity onPress={() => { navigation.navigate("CarrinhoDeCompras") }}><Ionicons name="cart-outline" size={30} color="black" /></TouchableOpacity>
+      </View>
+
       <ScrollView  
         showsHorizontalScrollIndicator={false}
         scrollEventThrottle={0}
@@ -65,6 +76,16 @@ const Carrossel = ({ imagens, imagemAtiva, setImagemAtiva }) => {
 export default Carrossel
 
 const estilos = StyleSheet.create({
+
+  topButtons:{
+    position: 'absolute',
+    zIndex: 2,
+    flexDirection:'row',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 20,
+  },
 
   wrap: {
     width: WIDTH,

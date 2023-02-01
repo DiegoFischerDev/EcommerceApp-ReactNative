@@ -1,7 +1,10 @@
 import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity} from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
 const BotaoLaranja = () => {
+
+  const navigation = useNavigation();
   return (
 
     <View>

@@ -3,8 +3,11 @@ import { View, Image, StyleSheet, Text, TouchableOpacity,} from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import EstrelaAmarela from '../../assets/EstrelaAmarela.png'
 import modelo1 from '../../assets/modelo_1.png'
+import { useNavigation } from '@react-navigation/native';
 
 const ItensRecomendados = ({legenda, preço, review}) => {
+
+  const navigation = useNavigation();
 
   return (
       <View style={estilos.view4}>
@@ -25,7 +28,7 @@ const ItensRecomendados = ({legenda, preço, review}) => {
           <Text style={{ fontWeight: 'bold', fontSize: 12 }}>
           {preço}
           </Text>
-          <TouchableOpacity style={estilos.view6}>
+          <TouchableOpacity style={estilos.view6} onPress={() => { navigation.navigate("DetalhesDoProduto") }}>
             <Ionicons name="arrow-forward-outline" size={20} color="black" />
           </TouchableOpacity>
         </View>

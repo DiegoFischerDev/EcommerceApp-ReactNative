@@ -1,7 +1,16 @@
 import React from 'react'
 import { StyleSheet, View,  Text, TouchableOpacity,  TextInput } from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
 const ResumoCompra = () => {
+
+  const navigation = useNavigation();
+
+  function FinalizarCompra() {
+    alert("Compra Finalizada")
+    navigation.navigate("Home")
+  }
+
   return (
     <View >
 
@@ -48,7 +57,7 @@ const ResumoCompra = () => {
         <Text style={{ fontSize: 16, fontWeight: '700' }}>R$ 2.520</Text>
       </View>
 
-      <TouchableOpacity onPress={() => {}} style={estilos.orangeButton}>
+      <TouchableOpacity onPress={FinalizarCompra} style={estilos.orangeButton}>
         <Text style={{ color: 'white', fontSize: 14, fontWeight: '700' }}>
           Finalizar Compra
         </Text>

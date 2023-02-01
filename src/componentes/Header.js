@@ -1,8 +1,11 @@
 import React from "react";
 import {StyleSheet, View, TextInput, TouchableOpacity} from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import { useNavigation } from '@react-navigation/native';
 
 const Header = () => {
+
+  const navigation = useNavigation();
 
   return (
 
@@ -20,7 +23,7 @@ const Header = () => {
         <Ionicons name="search-outline" size={25} color="#D9D9D9" />
       </TouchableOpacity>
     </View>
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => { navigation.navigate("CarrinhoDeCompras") }}>
       <Ionicons name="cart-outline" size={30} color="black" />
     </TouchableOpacity>
   </View>

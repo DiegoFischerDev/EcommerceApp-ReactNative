@@ -1,10 +1,18 @@
 import React from 'react'
 import {StyleSheet, Text, View, TouchableOpacity, StatusBar, Linking, TextInput,
 } from 'react-native'
-
+import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcon from "react-native-vector-icons/MaterialCommunityIcons";
 
 function SingIn() {
+
+  const navigation = useNavigation();
+
+  function loginButton () {
+    navigation.navigate('Loja')
+  }
+
+
   return (
     <View>
       <StatusBar
@@ -49,9 +57,9 @@ function SingIn() {
       </View>
 
       <TextInput style={estilos.inputBox} placeholder="E-mail" />
-      <TextInput style={[estilos.inputBox, { marginTop: 19 }]} placeholder="Senha"/>
+      <TextInput style={[estilos.inputBox, { marginTop: 19 }]} placeholder="Senha" secureTextEntry="true"/>
 
-      <TouchableOpacity style={estilos.buttonOrange}>
+      <TouchableOpacity style={estilos.buttonOrange} onPress={() => { navigation.navigate("TabRotas") }}>
         <Text style={{ color: 'white' }}>Login</Text>
       </TouchableOpacity>
 

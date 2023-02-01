@@ -22,10 +22,10 @@ function TelaPrincipal() {
       <Text style={estilos.h2}>Venda seus produtos da maneira mais inteligente e rápida para obter dinheiro imediato e uma consciência mais limpa.</Text>
 
       <View style={estilos.view_buttons}>
-        <TouchableOpacity style={estilos.button_login} onPress={() => { navigation.navigate('Sign In') }}>
+        <TouchableOpacity style={estilos.button_login} onPress={() => { navigation.navigate('SignIn') }}>
           <Text style={estilos.color_white}>Log In</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={estilos.button_signup} onPress={() => { navigation.navigate('Sign In') }}>
+        <TouchableOpacity style={estilos.button_signup} onPress={() => { navigation.navigate('SignIn') }}>
           <Text style={estilos.color_orange}>Sign Up</Text>
         </TouchableOpacity>
       </View>
