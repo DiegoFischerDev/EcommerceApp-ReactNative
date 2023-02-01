@@ -1,7 +1,13 @@
 import react, { useEffect, useState } from "react";
-import { obterProdutos } from "../serviços";
+import { api } from "../serviços";
 
 export const useProdutos = (estadoInicial) => {
+
+  const obterProdutos = async (setProdutos) => {
+    await api.get("/produtos").then((response) => setProdutos(response.data))
+    .catch((erro) => console.error(erro));
+  }
+
   const [produtos, setProdutos] = useState(estadoInicial);
 
   useEffect (() => {

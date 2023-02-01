@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image,} from 'react-native'
 import oferta1 from '../../../assets/oferta_1.png'
 import oferta2 from '../../../assets/oferta_2.png'
@@ -7,11 +7,13 @@ import StatusB from '../../componentes/StatusB'
 import HorizontalCard from './componentes/HorizontalCard'
 import HeaderBemVindo from './componentes/HeaderBemVindo'
 import Ofertas from './componentes/Oferta'
-import { useAnuncios } from '../../hooks/useAnuncios'
+import { ObterAnunciosDaApi } from '../../hooks/ObterAnunciosDaApi'
 
 const Home = () => {
 
-  const [anuncios] = useAnuncios([]);
+  const [anuncios, setAnuncios] = useState([]);
+
+  ObterAnunciosDaApi(setAnuncios);
 
   return (
 

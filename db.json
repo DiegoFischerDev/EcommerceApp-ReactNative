@@ -4,7 +4,7 @@
       "id": 1,
       "legenda": "Camisa Longa Branca",
       "preço": 200,
-      "review": 5.0,
+      "review": 3.8,
       "reviewqtd": 80
     },
     {
@@ -41,7 +41,7 @@
   "anuncios": [
     {
       "id": 1,
-      "titulo": "Troque e Economize",
+      "titulo": "Troque e Economize Muito!",
       "descricao": "Desfrute de uma ótima economia"
     },
     {

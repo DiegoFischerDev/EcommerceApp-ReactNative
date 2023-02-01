@@ -9,13 +9,13 @@ import Header from '../../componentes/Header'
 import StatusB from '../../componentes/StatusB'
 import Titulo from '../../componentes/Titulo'
 import ItensRecomendados from '../../componentes/ItensRecomendados'
-// import { produtos } from '../../mocks/produtos'
-import { obterProdutos } from '../../serviços'
-import { useProdutos } from '../../hooks/useProdutos'
+import { ObterProdutosDaApi } from '../../hooks/ObterProdutosDaApi'
 
 const Loja = () => {
 
-  const [produtos] = useProdutos([]);
+  const [produtos, setProdutos] = useState([]);
+
+  ObterProdutosDaApi(setProdutos);
 
   return (
     
