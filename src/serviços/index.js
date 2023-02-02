@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:3000/" // http://localhost:3000/
+  baseURL: "https://8868-177-207-79-239.sa.ngrok.io/" // http://localhost:3000/
 })
