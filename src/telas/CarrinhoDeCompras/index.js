@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { SafeAreaView, View, FlatList } from 'react-native'
 import StatusB from '../../componentes/StatusB'
 import Header from './componentes/Header'
@@ -20,7 +20,7 @@ const CarrinhoDeCompras = () => {
           style={{marginVertical: 0}}
           showsVerticalScrollIndicator={false}
           data={itens}
-          renderItem={({item}) => <CarCard legenda={item.legenda} preço={item.preço} tamanho={item.tamanho} quantidade={item.quantidade} id={item.id} />}
+          renderItem={({item}) => <CarCard id={item.id} />}
           keyExtractor={item => item.id}
           ListHeaderComponent={() => { return <Header /> }}
           ListFooterComponent={() => { return <ResumoCompra /> }}

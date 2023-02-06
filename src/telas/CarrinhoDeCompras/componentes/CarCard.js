@@ -1,12 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {StyleSheet, View, Text, TouchableOpacity, Image,} from 'react-native';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import modelo1 from '../../../../assets/modelo_1.png'
 import { GlobalContext } from '../../../context/GlobalContext';
 
-const CarCard = ({legenda, tamanho, preço, quantidade, id}) => {
+const CarCard = ({id}) => {
 
-  const { removerItem } = useContext(GlobalContext);
+  const { removerItem, quantidadeMaisUm, itens, quantidadeMenosUm } = useContext(GlobalContext);
+
+  const [quantidade, setQuantidade] = useState(itens[id-1].quantidade)
+
+  function MenosUm(id) {
+    if (quantidade>1) {
+      setQuantidade(quantidade-1);
+      quantidadeMenosUm(id);
+    }
+  }
+
+  function MaisUm(id) {
+    setQuantidade(quantidade+1);
+    quantidadeMaisUm(id);
+  }
 
   return (
     <View style={estilos.card}>
@@ -14,21 +28,21 @@ const CarCard = ({legenda, tamanho, preço, quantidade, id}) => {
       <Image style={estilos.image} source={modelo1}></Image>
 
       <View style={estilos.inerCard1}>
-        <Text style={{fontSize: 10}}>{legenda}</Text>
+        <Text style={{fontSize: 10}}>{itens[id-1].legenda}</Text>
         <View style={{flexDirection:'row', alignItems: 'center'}}>
           <Text style={{color:'#A6A6A6', fontSize:10}}>Tamanho: </Text>
-          <Text>{tamanho}</Text>
+          <Text>{itens[id-1].tamanho}</Text>
         </View>
-        <Text style={{fontWeight: 'bold'}}>R$ {preço}</Text>
+        <Text style={{fontWeight: 'bold'}}>R$ {itens[id-1].preço}</Text>
       </View>
 
       <View style={estilos.inerCard2}>
         <TouchableOpacity onPress={() => {removerItem(id)}}><Ionicons name="trash-outline" size={16} color="orange" /></TouchableOpacity>
 
         <View style={estilos.qtdview}>
-          <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 15}}>-</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => {MenosUm(id)}} style={estilos.qtdbutton}><Text style={{fontSize: 15}}>-</Text></TouchableOpacity>
           <Text style={{fontSize: 16, marginHorizontal: 10}}>{quantidade}</Text>
-          <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 15}}>+</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => {MaisUm(id)}} style={estilos.qtdbutton}><Text style={{fontSize: 15}}>+</Text></TouchableOpacity>
         </View>
       </View>
 

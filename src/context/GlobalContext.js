@@ -22,8 +22,18 @@ export const ComprasProvider = ({ children }) => {
         setItens([]);
     }
 
+    const quantidadeMaisUm = (id) => {
+        itens[id-1].quantidade ++
+        console.table(itens)
+    }
+
+    const quantidadeMenosUm = (id) => {
+        itens[id-1].quantidade --
+        console.table(itens)
+    }
+
     return (
-        <GlobalContext.Provider value={{ id, itens, adicionarItem, removerItem, esvaziarCarrinho }}>
+        <GlobalContext.Provider value={{ id, itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm }}>
             {children}
         </GlobalContext.Provider>
     )

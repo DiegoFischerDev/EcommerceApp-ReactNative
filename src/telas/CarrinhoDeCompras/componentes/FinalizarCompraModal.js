@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Modal, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useNavigation } from '@react-navigation/native';
+import { GlobalContext } from "../../../context/GlobalContext";
 
 const FinalizarCompraModal = ({ modalVisible, setModalVisible }) => {
 
   const navigation = useNavigation();
+
+  const { esvaziarCarrinho } = useContext(GlobalContext);
+
 
     return (
         <View style={styles.centeredView}>
@@ -21,7 +25,7 @@ const FinalizarCompraModal = ({ modalVisible, setModalVisible }) => {
                         <Text style={styles.modalText}>Compra finalizada!</Text>
                         <TouchableOpacity
                             style={[styles.button, styles.buttonClose]}
-                            onPress={() => {setModalVisible(!modalVisible); navigation.navigate("Home")}}
+                            onPress={() => {setModalVisible(!modalVisible); navigation.navigate("Home"); esvaziarCarrinho()}}
                         >
                             <Text style={styles.textStyle}>Fechar</Text>
                         </TouchableOpacity>
