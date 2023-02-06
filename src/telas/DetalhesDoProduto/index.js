@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native'
+import { SafeAreaView, StyleSheet, View, Text,} from 'react-native'
 import StatusB from '../../componentes/StatusB'
 import BotaoLaranja from './componentes/BotaoLaranja'
 import BotaoQuantidade from './componentes/BotaoQuantidade'
@@ -14,10 +14,25 @@ import modelo4 from "../../../assets/modelo_4.png";
 const imagens = [modelo1, modelo2, modelo3, modelo4];
 
 
-const DetalhesDoProduto = () => {
+const DetalhesDoProduto = ({ route }) => {
+
+  const routeInfo = route.params;
 
   const [TamanhoSelecionado, setTamanhoSelecionado] = useState("");
+  const [numItens, setNumItens] = useState(1);
   const [imagemAtiva, setImagemAtiva] = useState(0);
+
+
+  let produto = {
+    legenda: routeInfo.legenda,
+    preço: routeInfo.preço,
+    review: routeInfo.review,
+    reviewqtd: routeInfo.reviewqtd,
+    tamanho: TamanhoSelecionado,
+    quantidade: numItens
+  }
+
+  console.table(produto)
 
   return (
 
@@ -30,7 +45,7 @@ const DetalhesDoProduto = () => {
         setImagemAtiva={setImagemAtiva}
       />
 
-      <ProductDescription legenda={'Camisa de Algodão Regular Fit (Masculina)'} preço={'100,00'} review={'4.9'} reviewqtd={'83'} />
+      <ProductDescription legenda={produto.legenda} preço={produto.preço} review={produto.review} reviewqtd={produto.reviewqtd} />
 
       <Text style={{marginVertical: 18, marginLeft:21, fontSize: 16}}>Selecionar Tamanho</Text>
 
@@ -43,7 +58,7 @@ const DetalhesDoProduto = () => {
 
 
       <View style={estilos.view1}>
-        <BotaoQuantidade />
+        <BotaoQuantidade numItens={numItens} setNumItens={setNumItens}/>
         <BotaoLaranja />
       </View>
 

@@ -5,16 +5,25 @@ import EstrelaAmarela from '../../assets/EstrelaAmarela.png'
 import modelo1 from '../../assets/modelo_1.png'
 import { useNavigation } from '@react-navigation/native';
 
-const ItensRecomendados = ({legenda, preço, review}) => {
+const ItensRecomendados = ({legenda, preço, review, reviewqtd}) => {
 
   const navigation = useNavigation();
+
+  let produtoInfo = {
+    legenda: legenda,
+    preço: preço,
+    review: review,
+    reviewqtd: reviewqtd
+  }
 
   return (
       <View style={estilos.view4}>
         <View style={estilos.absolute}>
           <View style={estilos.view8}>
             <Image source={EstrelaAmarela}></Image>
-            <Text style={{fontSize: 12, fontWeight: 'bold'}}>{review}</Text>
+            <Text style={{fontSize: 12, fontWeight: 'bold'}}>
+              {review}
+            </Text>
           </View>
           <TouchableOpacity style={estilos.view9}>
             <Ionicons name="heart-outline" size={22} color="black" />
@@ -28,7 +37,7 @@ const ItensRecomendados = ({legenda, preço, review}) => {
           <Text style={{ fontWeight: 'bold', fontSize: 12 }}>
           {preço}
           </Text>
-          <TouchableOpacity style={estilos.view6} onPress={() => { navigation.navigate("DetalhesDoProduto") }}>
+          <TouchableOpacity style={estilos.view6} onPress={() => { navigation.navigate("DetalhesDoProduto", produtoInfo)}}>
             <Ionicons name="arrow-forward-outline" size={20} color="black" />
           </TouchableOpacity>
         </View>

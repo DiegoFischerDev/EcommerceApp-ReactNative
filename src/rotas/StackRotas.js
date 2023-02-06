@@ -11,16 +11,14 @@ const Stack = createNativeStackNavigator();
 const StackRotas = () => {
 
   return (
-    <Stack.Navigator
-      initialRouteName="TelaPrincipal"
-      screenOptions={{headerShown: false}}
-    >
+    <Stack.Navigator initialRouteName="TelaPrincipal" screenOptions={{headerShown: false}} >
+
       <Stack.Screen name="TelaPrincipal" component={TelaPrincipal}/>
       <Stack.Screen name="SignIn" component={SingIn}/>
-      <Stack.Screen name="TabRotas" component={TabRotas}/>
       <Stack.Screen name="DetalhesDoProduto" component={DetalhesDoProduto}/>
       <Stack.Screen name="CarrinhoDeCompras" component={CarrinhoDeCompras}/>
-      <Stack.Screen name="Loja" component={Loja}/>
+
+      <Stack.Screen name="TabRotas" component={TabRotas}/>
 
     </Stack.Navigator>
   )

@@ -3,9 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity} from 'react-native'
 
 
 
-const BotaoQuantidade = () => {
-
-  const [numItens, setNumItens] = useState(1);
+const BotaoQuantidade = ({numItens, setNumItens}) => {
 
   return (
 

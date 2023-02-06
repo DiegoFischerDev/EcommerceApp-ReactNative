@@ -7,13 +7,15 @@ import StatusB from '../../componentes/StatusB'
 import HorizontalCard from './componentes/HorizontalCard'
 import HeaderBemVindo from './componentes/HeaderBemVindo'
 import Ofertas from './componentes/Oferta'
-import { ObterAnunciosDaApi } from '../../hooks/ObterAnunciosDaApi'
+import { useObterAnunciosDaApi } from '../../hooks/useObterAnunciosDaApi'
 
 const Home = () => {
 
   const [anuncios, setAnuncios] = useState([]);
 
-  ObterAnunciosDaApi(setAnuncios);
+  useObterAnunciosDaApi(setAnuncios);
+
+  console.table(anuncios)
 
   return (
 
@@ -24,9 +26,9 @@ const Home = () => {
 
       <View>
         <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-          {anuncios?.map((anuncios, indice) => {
+          {anuncios?.map((anuncio, indice) => {
             return (
-                    <HorizontalCard titulo={anuncios.titulo} descricao={anuncios.descricao} key={indice} />
+                    <HorizontalCard titulo={anuncio.titulo} descricao={anuncio.descricao} key={indice} />
                     )
           })}
         </ScrollView>

@@ -9,30 +9,30 @@
     },
     {
       "id": 2,
-      "legenda": "Camisa Longa Branca",
-      "preço": 100,
+      "legenda": "Camisa Preta",
+      "preço": 300,
       "review": 4.9,
       "reviewqtd": 80
     },
     {
       "id": 3,
-      "legenda": "Camisa Longa Branca",
-      "preço": 100,
-      "review": 4.9,
+      "legenda": "Camisa Rosa",
+      "preço": 500,
+      "review": 4.7,
       "reviewqtd": 80
     },
     {
       "id": 4,
-      "legenda": "Camisa Longa Branca",
-      "preço": 100,
-      "review": 4.9,
+      "legenda": "Camisa Sem Manga",
+      "preço": 400,
+      "review": 4.5,
       "reviewqtd": 80
     },
     {
       "id": 5,
-      "legenda": "Camisa Longa Branca",
+      "legenda": "Camisa Longa Preta",
       "preço": 100,
-      "review": 4.9,
+      "review": 4.2,
       "reviewqtd": 80
     }
   

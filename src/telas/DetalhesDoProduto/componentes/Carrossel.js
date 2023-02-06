@@ -26,7 +26,7 @@ const Carrossel = ({ imagens, imagemAtiva, setImagemAtiva }) => {
     <SafeAreaView>
 
       <View style={estilos.topButtons}>
-        <TouchableOpacity onPress={() => { navigation.navigate("Loja") }}><Ionicons name="arrow-back-outline" size={30} color="black" /></TouchableOpacity>
+        <TouchableOpacity onPress={() => { navigation.goBack() }}><Ionicons name="arrow-back-outline" size={30} color="black" /></TouchableOpacity>
         <TouchableOpacity onPress={() => { navigation.navigate("CarrinhoDeCompras") }}><Ionicons name="cart-outline" size={30} color="black" /></TouchableOpacity>
       </View>
 

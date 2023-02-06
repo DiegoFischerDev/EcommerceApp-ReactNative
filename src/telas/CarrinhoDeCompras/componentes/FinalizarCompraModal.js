@@ -21,7 +21,7 @@ const FinalizarCompraModal = ({ modalVisible, setModalVisible }) => {
                         <Text style={styles.modalText}>Compra finalizada!</Text>
                         <TouchableOpacity
                             style={[styles.button, styles.buttonClose]}
-                            onPress={() => {setModalVisible(!modalVisible); navigation.navigate("Loja")}}
+                            onPress={() => {setModalVisible(!modalVisible); navigation.navigate("Home")}}
                         >
                             <Text style={styles.textStyle}>Fechar</Text>
                         </TouchableOpacity>

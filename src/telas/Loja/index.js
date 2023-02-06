@@ -9,13 +9,13 @@ import Header from '../../componentes/Header'
 import StatusB from '../../componentes/StatusB'
 import Titulo from '../../componentes/Titulo'
 import ItensRecomendados from '../../componentes/ItensRecomendados'
-import { ObterProdutosDaApi } from '../../hooks/ObterProdutosDaApi'
+import { useObterProdutosDaApi } from '../../hooks/useObterProdutosDaApi'
 
 const Loja = () => {
 
   const [produtos, setProdutos] = useState([]);
 
-  ObterProdutosDaApi(setProdutos);
+  useObterProdutosDaApi(setProdutos);
 
   return (
     
@@ -35,9 +35,9 @@ const Loja = () => {
       <ScrollView showsVerticalScrollIndicator={false} scrollEventThrottle={0} >
         <View style={estilos.view8}>
 
-          {produtos?.map((produtos, indice) => {
+          {produtos?.map((produto, indice) => {
             return (
-             <ItensRecomendados legenda={produtos.legenda} preço={produtos.preço} review={produtos.review} key={indice} />
+             <ItensRecomendados legenda={produto.legenda} preço={produto.preço} review={produto.review} reviewqtd={produto.reviewqtd} key={indice} />
             )
           })}
 
