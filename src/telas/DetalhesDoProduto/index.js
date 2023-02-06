@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { SafeAreaView, StyleSheet, View, Text,} from 'react-native'
 import StatusB from '../../componentes/StatusB'
-import BotaoLaranja from './componentes/BotaoLaranja'
+import BotaoAddAoCarrinho from './componentes/BotaoAddAoCarrinho'
 import BotaoQuantidade from './componentes/BotaoQuantidade'
 import Carrossel from './componentes/Carrossel'
 import ProductDescription from './componentes/ProductDescription'
@@ -10,6 +10,7 @@ import modelo1 from "../../../assets/modelo_1.png";
 import modelo2 from "../../../assets/modelo_2.png";
 import modelo3 from "../../../assets/modelo_3.png";
 import modelo4 from "../../../assets/modelo_4.png";
+import { GlobalContext } from '../../context/GlobalContext'
 
 const imagens = [modelo1, modelo2, modelo3, modelo4];
 
@@ -18,12 +19,15 @@ const DetalhesDoProduto = ({ route }) => {
 
   const routeInfo = route.params;
 
+  const { id, itens } = useContext(GlobalContext);
+
   const [TamanhoSelecionado, setTamanhoSelecionado] = useState("");
   const [numItens, setNumItens] = useState(1);
   const [imagemAtiva, setImagemAtiva] = useState(0);
 
 
   let produto = {
+    id: id,
     legenda: routeInfo.legenda,
     preço: routeInfo.preço,
     review: routeInfo.review,
@@ -33,6 +37,8 @@ const DetalhesDoProduto = ({ route }) => {
   }
 
   console.table(produto)
+
+  console.table(itens)
 
   return (
 
@@ -59,7 +65,7 @@ const DetalhesDoProduto = ({ route }) => {
 
       <View style={estilos.view1}>
         <BotaoQuantidade numItens={numItens} setNumItens={setNumItens}/>
-        <BotaoLaranja />
+        <BotaoAddAoCarrinho produto={produto} tamanho={produto.tamanho} />
       </View>
 
     </SafeAreaView>

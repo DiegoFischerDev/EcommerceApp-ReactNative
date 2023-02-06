@@ -12,8 +12,8 @@ export const ComprasProvider = ({ children }) => {
         setId(id + 1)
     }
 
-    const removerItem = (item) => {
-        const listaDeItens = itens.filter((elementoDeItens) => elementoDeItens.id !== item.id)
+    const removerItem = (id) => {
+        const listaDeItens = itens.filter((elementoDeItens) => elementoDeItens.id !== id)
 
         setItens(listaDeItens)
     }

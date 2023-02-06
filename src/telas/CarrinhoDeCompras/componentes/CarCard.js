@@ -1,29 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {StyleSheet, View, Text, TouchableOpacity, Image,} from 'react-native';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import modelo1 from '../../../../assets/modelo_1.png'
+import { GlobalContext } from '../../../context/GlobalContext';
 
-const CarCard = ({nome, tamanho, preco}) => {
+const CarCard = ({legenda, tamanho, preço, quantidade, id}) => {
+
+  const { removerItem } = useContext(GlobalContext);
+
   return (
     <View style={estilos.card}>
 
       <Image style={estilos.image} source={modelo1}></Image>
 
       <View style={estilos.inerCard1}>
-        <Text style={{fontSize: 10}}>{nome}</Text>
+        <Text style={{fontSize: 10}}>{legenda}</Text>
         <View style={{flexDirection:'row', alignItems: 'center'}}>
           <Text style={{color:'#A6A6A6', fontSize:10}}>Tamanho: </Text>
           <Text>{tamanho}</Text>
         </View>
-        <Text style={{fontWeight: 'bold'}}>R$ {preco}</Text>
+        <Text style={{fontWeight: 'bold'}}>R$ {preço}</Text>
       </View>
 
       <View style={estilos.inerCard2}>
-        <TouchableOpacity><Ionicons name="trash-outline" size={16} color="orange" /></TouchableOpacity>
+        <TouchableOpacity onPress={() => {removerItem(id)}}><Ionicons name="trash-outline" size={16} color="orange" /></TouchableOpacity>
 
         <View style={estilos.qtdview}>
           <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 15}}>-</Text></TouchableOpacity>
-          <Text style={{fontSize: 16, marginHorizontal: 10}}>2</Text>
+          <Text style={{fontSize: 16, marginHorizontal: 10}}>{quantidade}</Text>
           <TouchableOpacity onPress={() => {}} style={estilos.qtdbutton}><Text style={{fontSize: 15}}>+</Text></TouchableOpacity>
         </View>
       </View>

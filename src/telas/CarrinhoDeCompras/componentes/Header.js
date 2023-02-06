@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {StyleSheet, View, Text, TouchableOpacity,} from 'react-native';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useNavigation } from '@react-navigation/native';
+import { GlobalContext } from '../../../context/GlobalContext';
 
 const Header = () => {
 
+  const { esvaziarCarrinho } = useContext(GlobalContext);
   const navigation = useNavigation();
 
   return (
         <View style={estilos.header}>
           <TouchableOpacity style={estilos.backButton} onPress={() => { navigation.goBack() }}><Ionicons name="arrow-back-outline" size={22} color="black" /></TouchableOpacity>
           <Text style={{fontSize: 14, fontWeight: 'bold'}}>Minhas Compras</Text>
-          <Text style={{fontSize: 12, color:'#D82F2F'}}>Limpar</Text>
+          <TouchableOpacity onPress={() => {esvaziarCarrinho()}}>
+            <Text style={{fontSize: 12, color:'#D82F2F'}}>Limpar</Text>
+          </TouchableOpacity>
         </View>
   )
 }
