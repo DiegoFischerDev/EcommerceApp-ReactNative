@@ -1,11 +1,13 @@
-import React from "react";
-import {StyleSheet, View, TextInput, TouchableOpacity} from "react-native";
+import React, { useContext } from "react";
+import {StyleSheet, View, TextInput, TouchableOpacity, Text} from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useNavigation } from '@react-navigation/native';
+import { GlobalContext } from '../context/GlobalContext';
 
 const Header = () => {
 
   const navigation = useNavigation();
+  const { itens } = useContext(GlobalContext);
 
   return (
 
@@ -25,9 +27,9 @@ const Header = () => {
     </View>
     <TouchableOpacity onPress={() => { navigation.navigate("CarrinhoDeCompras") }}>
       <Ionicons name="cart-outline" size={30} color="black" />
+      <View style={itens.length ? estilos.contador : {display:"none"}}><Text>{itens.length}</Text></View>
     </TouchableOpacity>
   </View>
-
   )
 }
 
@@ -65,5 +67,17 @@ const estilos = StyleSheet.create({
       shadowRadius: 1.41,
       elevation: 2,
   },
+
+  contador: {
+    width: 20,
+    height: 20,
+    borderRadius: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "orange",
+    position: "absolute",
+    left: 23,
+    top: 20,
+  }
 
 })
