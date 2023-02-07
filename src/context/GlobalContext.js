@@ -3,17 +3,19 @@ import React, { createContext, useState } from "react";
 export const GlobalContext = createContext({});
 
 export const ComprasProvider = ({ children }) => {
-    const [id, setId] = useState(1);
     const [itens, setItens] = useState([]);
+    let id = itens.length+1
 
     const adicionarItem = (item) => {
         setItens([...itens, item])
-
-        setId(id + 1)
     }
 
     const removerItem = (id) => {
         const listaDeItens = itens.filter((elementoDeItens) => elementoDeItens.id !== id)
+
+        for (let i = 0; i < listaDeItens.length; i++){
+            listaDeItens[i].id = i+1
+        } // Para organizar os ids dos itens de forma continua e crescente novamente
 
         setItens(listaDeItens)
     }

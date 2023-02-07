@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Image, StyleSheet, Text, TouchableOpacity,} from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import EstrelaAmarela from '../../assets/EstrelaAmarela.png'
 import modelo1 from '../../assets/modelo_1.png'
 import { useNavigation } from '@react-navigation/native';
 
@@ -20,7 +19,7 @@ const ItensRecomendados = ({legenda, preço, review, reviewqtd}) => {
       <View style={estilos.view4}>
         <View style={estilos.absolute}>
           <View style={estilos.view8}>
-            <Image source={EstrelaAmarela}></Image>
+            <Ionicons name="star" size={15} color="yellow" />
             <Text style={{fontSize: 12, fontWeight: 'bold'}}>
               {review}
             </Text>

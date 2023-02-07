@@ -11,11 +11,15 @@ import modelo2 from "../../../assets/modelo_2.png";
 import modelo3 from "../../../assets/modelo_3.png";
 import modelo4 from "../../../assets/modelo_4.png";
 import { GlobalContext } from '../../context/GlobalContext'
+import ComprasModal from '../../componentes/ComprasModal'
 
 const imagens = [modelo1, modelo2, modelo3, modelo4];
 
 
 const DetalhesDoProduto = ({ route }) => {
+
+  const [visivel, setVisivel] = useState(false)
+  const [modalErroVisivel, setModalErroVisivel] = useState(false)
 
   const routeInfo = route.params;
 
@@ -65,8 +69,28 @@ const DetalhesDoProduto = ({ route }) => {
 
       <View style={estilos.view1}>
         <BotaoQuantidade numItens={numItens} setNumItens={setNumItens}/>
-        <BotaoAddAoCarrinho produto={produto} tamanho={produto.tamanho} />
+        <BotaoAddAoCarrinho produto={produto} tamanho={produto.tamanho} setVisivel={setVisivel} setModalErroVisivel={setModalErroVisivel} />
       </View>
+
+      <ComprasModal
+        visivel={visivel}
+        setVisivel={setVisivel}
+        texto={'Item adicionado ao carrinho!'}
+        botao={{
+          texto: 'Adicionar novo item',
+          link: 'Loja'
+        }}
+      />
+
+      <ComprasModal
+        visivel={modalErroVisivel}
+        setVisivel={setModalErroVisivel}
+        texto={'Selecione um Tamanho'}
+        botao={{
+          texto: 'Fechar',
+          link: ''
+        }}
+      />
 
     </SafeAreaView>
       
