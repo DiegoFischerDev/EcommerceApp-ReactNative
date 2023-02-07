@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 export const GlobalContext = createContext({});
 
@@ -27,15 +27,33 @@ export const ComprasProvider = ({ children }) => {
     const quantidadeMaisUm = (id) => {
         itens[id-1].quantidade ++
         console.table(itens)
+        calculaSubTotal()
     }
 
     const quantidadeMenosUm = (id) => {
         itens[id-1].quantidade --
         console.table(itens)
+        calculaSubTotal()
     }
 
+    const [subtotal, setSubTotal] = useState(0);
+
+    function calculaSubTotal(){
+        let soma = 0;
+  
+        for(let i = 0; i < itens.length; i++){
+          soma+= itens[i].preço*itens[i].quantidade
+        }
+    
+        setSubTotal(soma)
+    }
+
+    useEffect(() => {
+        calculaSubTotal()
+    }, [itens])
+
     return (
-        <GlobalContext.Provider value={{ id, itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm }}>
+        <GlobalContext.Provider value={{ id, itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
             {children}
         </GlobalContext.Provider>
     )

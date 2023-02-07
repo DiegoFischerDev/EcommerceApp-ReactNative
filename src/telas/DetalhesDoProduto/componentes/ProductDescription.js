@@ -7,7 +7,7 @@ const ProductDescription = ({legenda, preço, review, reviewqtd}) => {
   return (
     <SafeAreaView style={{marginLeft: 21}}>
       <View style={{flexDirection:'row', alignItems: 'center'}}>
-        <Ionicons name="star" size={15} color="yellow" />
+        <Ionicons name="star" size={15} color="#fec800" />
         <Text style={{fontSize:18, fontWeight: 'bold', marginLeft: 5}}>{review}</Text>
         <Text style={{fontSize:12, marginLeft: 5, color: '#CACACA'}}>({reviewqtd})</Text>
         <Text style={{fontSize:12, marginLeft: 5}}>Reviews</Text>

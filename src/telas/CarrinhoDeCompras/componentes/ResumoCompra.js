@@ -1,13 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { StyleSheet, View,  Text, TouchableOpacity,  TextInput } from 'react-native'
-import { useNavigation } from '@react-navigation/native';
 import FinalizarCompraModal from './FinalizarCompraModal';
+import { GlobalContext } from '../../../context/GlobalContext';
 
 const ResumoCompra = () => {
 
-  const navigation = useNavigation();
-
   const [modalVisible, setModalVisible] = useState(false);
+
+  const { subtotal } = useContext(GlobalContext);
+
+  const[voucher, setVoucher] = useState(0)
+  let taxaDeEntrega = subtotal === 0 ? 0 : 20;
+  let total = subtotal - voucher + taxaDeEntrega;
 
   return (
     <View >
@@ -23,22 +27,22 @@ const ResumoCompra = () => {
               placeholderTextColor={'#CACACA'}
             />
           </View>
-          <TouchableOpacity style={estilos.firstOrangeButton}><Text style={{color: 'white', fontSize: 14, fontWeight: 'bold'}}>Aplicar</Text></TouchableOpacity>
+          <TouchableOpacity onPress={()=>{setVoucher(100)}} style={estilos.firstOrangeButton}><Text style={{color: 'white', fontSize: 14, fontWeight: 'bold'}}>Aplicar</Text></TouchableOpacity>
         </View>
 
       <View style={estilos.text}>
         <Text style={{ fontSize: 16, color: '#A6A6A6' }}>Sub-total</Text>
-        <Text style={{ fontSize: 16, fontWeight: '500' }}>R$ 2.600</Text>
+        <Text style={{ fontSize: 16, fontWeight: '500' }}>R$ {subtotal}</Text>
       </View>
 
       <View style={estilos.text}>
         <Text style={{ fontSize: 16, color: '#A6A6A6' }}>Voucher</Text>
-        <Text style={{ fontSize: 16, fontWeight: '500' }}>-R$ 100</Text>
+        <Text style={{ fontSize: 16, fontWeight: '500' }}>-R$ {voucher}</Text>
       </View>
 
       <View style={estilos.text}>
         <Text style={{ fontSize: 16, color: '#A6A6A6' }}>Taxa de Entrega</Text>
-        <Text style={{ fontSize: 16, fontWeight: '500' }}>R$ 20</Text>
+        <Text style={{ fontSize: 16, fontWeight: '500' }}>R$ {taxaDeEntrega}</Text>
       </View>
 
       <View
@@ -52,7 +56,7 @@ const ResumoCompra = () => {
 
       <View style={estilos.text}>
         <Text style={{ fontSize: 16, fontWeight: '700' }}>Total</Text>
-        <Text style={{ fontSize: 16, fontWeight: '700' }}>R$ 2.520</Text>
+        <Text style={{ fontSize: 16, fontWeight: '700' }}>R$ {total}</Text>
       </View>
 
       <FinalizarCompraModal modalVisible={modalVisible} setModalVisible={setModalVisible} />

@@ -19,7 +19,7 @@ const ItensRecomendados = ({legenda, preço, review, reviewqtd}) => {
       <View style={estilos.view4}>
         <View style={estilos.absolute}>
           <View style={estilos.view8}>
-            <Ionicons name="star" size={15} color="yellow" />
+            <Ionicons name="star" size={15} color="#fec800" />
             <Text style={{fontSize: 12, fontWeight: 'bold'}}>
               {review}
             </Text>
