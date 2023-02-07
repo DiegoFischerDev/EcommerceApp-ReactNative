@@ -26,8 +26,8 @@ const Header = () => {
       </TouchableOpacity>
     </View>
     <TouchableOpacity onPress={() => { navigation.navigate("CarrinhoDeCompras") }}>
-      <Ionicons name="cart-outline" size={30} color="black" />
-      <View style={itens.length ? estilos.contador : {display:"none"}}><Text>{itens.length}</Text></View>
+      <Ionicons name="cart" size={30} color="black" />
+      <View style={itens.length ? estilos.contador : {display:"none"}}><Text style={{color: 'white'}}>{itens.length}</Text></View>
     </TouchableOpacity>
   </View>
   )
@@ -74,10 +74,10 @@ const estilos = StyleSheet.create({
     borderRadius: "100%",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "orange",
+    backgroundColor: "#ff3b30",
     position: "absolute",
     left: 23,
-    top: 20,
+    top: -5,
   }
 
 })
