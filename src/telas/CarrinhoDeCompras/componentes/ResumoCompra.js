@@ -2,16 +2,36 @@ import React, { useContext, useEffect, useState } from 'react'
 import { StyleSheet, View,  Text, TouchableOpacity,  TextInput } from 'react-native'
 import FinalizarCompraModal from './FinalizarCompraModal';
 import { GlobalContext } from '../../../context/GlobalContext';
+import { useObterPedidosDaApi } from '../../../hooks/useObterPedidosDaApi';
+import axios from "axios";
 
 const ResumoCompra = () => {
 
   const [modalVisible, setModalVisible] = useState(false);
 
-  const { subtotal } = useContext(GlobalContext);
+  const { subtotal, itens } = useContext(GlobalContext);
 
   const[voucher, setVoucher] = useState(0)
   let taxaDeEntrega = subtotal === 0 ? 0 : 20;
   let total = subtotal - voucher + taxaDeEntrega;
+
+  const [pedidos, setPedidos] = useState([])
+
+  useObterPedidosDaApi(setPedidos)
+
+  let pedido = {
+    "id": "230207"+(pedidos.length+1),
+    "itens": itens,
+    "valorTotalDoPedido": total,
+    "status": "Aguardando Confirmação da Loja",
+    "previsãoDeEntrega": "12/04/2023"
+  }
+
+  const url = 'http://localhost:3000/';
+  async function EnviarPedido (pedido) {
+    await axios.post(url+'pedidos', pedido);
+  }
+
 
   return (
     <View >
@@ -61,7 +81,7 @@ const ResumoCompra = () => {
 
       <FinalizarCompraModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
 
-      <TouchableOpacity style={estilos.orangeButton} onPress={() => setModalVisible(true)}>
+      <TouchableOpacity style={estilos.orangeButton} onPress={() => {setModalVisible(true); EnviarPedido (pedido)}}>
         <Text style={estilos.textoBotao}>Finalizar Compra</Text>
       </TouchableOpacity>
     </View>
