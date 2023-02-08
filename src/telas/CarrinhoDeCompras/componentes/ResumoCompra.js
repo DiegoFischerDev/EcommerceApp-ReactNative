@@ -15,9 +15,7 @@ const ResumoCompra = () => {
   let taxaDeEntrega = subtotal === 0 ? 0 : 20;
   let total = subtotal - voucher + taxaDeEntrega;
 
-  const [pedidos, setPedidos] = useState([])
-
-  useObterPedidosDaApi(setPedidos)
+  const [pedidos, setPedidos] = useObterPedidosDaApi()
 
   let pedido = {
     "id": "230207"+(pedidos.length+1),

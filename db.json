@@ -65,27 +65,19 @@
           "reviewqtd": 80,
           "tamanho": "M",
           "quantidade": 2
-        }
-      ],
-      "valorTotalDoPedido": 420,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302072",
-      "itens": [
+        },
         {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
+          "id": 2,
+          "legenda": "Camisa Preta",
+          "preço": 300,
+          "review": 4.9,
           "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 1
+          "tamanho": "GG",
+          "quantidade": 3
         }
       ],
-      "valorTotalDoPedido": 220,
-      "status": "Aguardando Confirmação da Loja",
+      "valorTotalDoPedido": 1220,
+      "status": "Confirmado",
       "previsãoDeEntrega": "12/04/2023"
     }
   ]

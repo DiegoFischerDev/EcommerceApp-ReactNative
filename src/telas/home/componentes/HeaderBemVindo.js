@@ -1,5 +1,5 @@
 import React from "react";
-import {StyleSheet, View, Text, Image} from "react-native";
+import {StyleSheet, View, Text, Image, TouchableOpacity} from "react-native";
 import usuarioIcone from '../../../../assets/usuario_icone.png'
 
 const HeaderBemVindo = ({UsuarioName}) => {
@@ -11,8 +11,7 @@ const HeaderBemVindo = ({UsuarioName}) => {
       <Text style={{ fontSize: 10 }}>Bem-Vindo!</Text>
       <Text style={{ fontSize: 14, fontWeight: 'bold' }}>{UsuarioName}</Text>
     </View>
-
-    <Image source={usuarioIcone} style={estilos.usuarioIcone}></Image>
+      <Image source={usuarioIcone} style={estilos.usuarioIcone}></Image>
   </View>
 
   )

@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
+import { obterItensDoCarrinho, salvarLocalmente, removerLocalmente } from "../serviços/local";
 
 export const GlobalContext = createContext({});
 
@@ -6,11 +7,17 @@ export const ComprasProvider = ({ children }) => {
     const [itens, setItens] = useState([]);
     let id = itens.length+1
 
-    const adicionarItem = (item) => {
+    useEffect(() => {
+        obterItensDoCarrinho(setItens)
+    }, [])
+
+    const adicionarItem = async (item) => {
         setItens([...itens, item])
+
+        await salvarLocalmente([...itens, item])
     }
 
-    const removerItem = (id) => {
+    const removerItem = async (id) => {
         const listaDeItens = itens.filter((elementoDeItens) => elementoDeItens.id !== id)
 
         for (let i = 0; i < listaDeItens.length; i++){
@@ -18,10 +25,12 @@ export const ComprasProvider = ({ children }) => {
         } // Para organizar os ids dos itens de forma continua e crescente novamente
 
         setItens(listaDeItens)
+        await salvarLocalmente(listaDeItens)
     }
 
-    const esvaziarCarrinho = () => {
+    const esvaziarCarrinho = async () => {
         setItens([]);
+        await removerLocalmente()
     }
 
     const quantidadeMaisUm = (id) => {

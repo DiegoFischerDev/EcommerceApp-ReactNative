@@ -13,12 +13,8 @@ import MeusPedidosCard from './componentes/MeusPedidosCard'
 
 const Home = () => {
 
-  const [anuncios, setAnuncios] = useState([]);
-  useObterAnunciosDaApi(setAnuncios);
-
-  const [pedidos, setPedidos] = useState([])
-  useObterPedidosDaApi(setPedidos)
-
+  const [anuncios, setAnuncios] = useObterAnunciosDaApi();
+  const [pedidos, setPedidos] = useObterPedidosDaApi()
 
   return (
 

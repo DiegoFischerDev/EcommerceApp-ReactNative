@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../serviços";
 
-export function useObterPedidosDaApi (setPedidos) {
+export function useObterPedidosDaApi () {
+
+  const [pedidos, setPedidos] = useState([])
 
   async function ObterPedidos (setPedidos) {
     await api.get("/pedidos").then((response) => setPedidos(response.data))
@@ -10,5 +12,7 @@ export function useObterPedidosDaApi (setPedidos) {
 
   useEffect (() => {
     ObterPedidos(setPedidos)
-  }, []);
+  }, [pedidos]);
+
+  return [pedidos, setPedidos]
 }

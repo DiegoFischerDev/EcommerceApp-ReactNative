@@ -13,9 +13,7 @@ import { useObterProdutosDaApi } from '../../hooks/useObterProdutosDaApi'
 
 const Loja = () => {
 
-  const [produtos, setProdutos] = useState([]);
-
-  useObterProdutosDaApi(setProdutos);
+  const [produtos, setProdutos] = useObterProdutosDaApi();
 
   return (
     

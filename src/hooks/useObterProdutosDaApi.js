@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../serviços";
 
-export function useObterProdutosDaApi (setProdutos) {
+export function useObterProdutosDaApi () {
+
+  const [produtos, setProdutos] = useState([])
 
   async function ObterProdutos (setProdutos) {
     await api.get("/produtos").then((response) => setProdutos(response.data))
@@ -10,5 +12,7 @@ export function useObterProdutosDaApi (setProdutos) {
 
   useEffect (() => {
     ObterProdutos(setProdutos)
-  }, []);
+  }, [produtos]);
+
+  return [produtos, setProdutos]
 }
