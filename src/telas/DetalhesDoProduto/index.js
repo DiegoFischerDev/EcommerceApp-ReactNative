@@ -41,9 +41,6 @@ const DetalhesDoProduto = ({ route }) => {
     quantidade: numItens
   }
 
-  console.table(produto)
-
-  console.table(itens)
 
   return (
 

@@ -1,7 +1,7 @@
-import { useNavigation } from '@react-navigation/native'
 import React, { useContext } from 'react'
 import { Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { GlobalContext } from '../context/GlobalContext'
+import { useNavigation } from '@react-navigation/native'
 
 const ComprasModal = ({visivel, setVisivel, texto, botao, finalizarCompra}) => {
   const navigation = useNavigation()

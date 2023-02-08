@@ -148,6 +148,49 @@
       "valorTotalDoPedido": 1520,
       "status": "Aguardando Confirmação da Loja",
       "previsãoDeEntrega": "12/04/2023"
+    },
+    {
+      "id": "2302075",
+      "itens": [
+        {
+          "id": 1,
+          "legenda": "Camisa Longa Branca",
+          "preço": 200,
+          "review": 3.8,
+          "reviewqtd": 80,
+          "tamanho": "G",
+          "quantidade": 3
+        }
+      ],
+      "valorTotalDoPedido": 520,
+      "status": "Aguardando Confirmação da Loja",
+      "previsãoDeEntrega": "12/04/2023"
+    },
+    {
+      "id": "2302076",
+      "itens": [
+        {
+          "id": 1,
+          "legenda": "Camisa Longa Branca",
+          "preço": 200,
+          "review": 3.8,
+          "reviewqtd": 80,
+          "tamanho": "G",
+          "quantidade": 4
+        },
+        {
+          "id": 2,
+          "legenda": "Camisa Preta",
+          "preço": 300,
+          "review": 4.9,
+          "reviewqtd": 80,
+          "tamanho": "G",
+          "quantidade": 3
+        }
+      ],
+      "valorTotalDoPedido": 1620,
+      "status": "Aguardando Confirmação da Loja",
+      "previsãoDeEntrega": "12/04/2023"
     }
   ]
 }
