@@ -1,14 +1,13 @@
 import React, { createContext, useEffect, useState } from "react";
-import { obterItensDoCarrinho, salvarLocalmente, removerLocalmente } from "../serviços/local";
+import { obterItensDoCarrinhoArmazenadosLocalmente, salvarLocalmente, removerLocalmente } from "../serviços/local";
 
 export const GlobalContext = createContext({});
 
 export const ComprasProvider = ({ children }) => {
     const [itens, setItens] = useState([]);
-    let id = itens.length+1
 
     useEffect(() => {
-        obterItensDoCarrinho(setItens)
+        obterItensDoCarrinhoArmazenadosLocalmente(setItens)
     }, [])
 
     const adicionarItem = async (item) => {
@@ -62,7 +61,7 @@ export const ComprasProvider = ({ children }) => {
     }, [itens])
 
     return (
-        <GlobalContext.Provider value={{ id, itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
+        <GlobalContext.Provider value={{ itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
             {children}
         </GlobalContext.Provider>
     )

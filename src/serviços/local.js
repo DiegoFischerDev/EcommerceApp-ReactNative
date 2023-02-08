@@ -8,7 +8,7 @@ export const salvarLocalmente = async (itens) => {
   }
 }
 
-export const obterItensDoCarrinho = async (setItens) => {
+export const obterItensDoCarrinhoArmazenadosLocalmente = async (setItens) => {
   const itens= await AsyncStorage.getItem("carrinho")
 
   if (!!itens) {

@@ -24,7 +24,7 @@ const Home = () => {
 
       <HeaderBemVindo UsuarioName={"Diego Fischer de Araujo"}/>
 
-      <Text style={pedidos ? {fontWeight:'700', marginTop: 15, marginLeft: 15} : {display:"none"}}>Meus Pedidos</Text>
+      <Text style={{fontWeight:'700', marginTop: 15, marginLeft: 15}}>Meus Pedidos</Text>
 
         {pedidos?.map((pedido, indice) => {
           return (

@@ -23,15 +23,16 @@ const DetalhesDoProduto = ({ route }) => {
 
   const routeInfo = route.params;
 
-  const { id, itens } = useContext(GlobalContext);
+  const { itens } = useContext(GlobalContext);
 
   const [TamanhoSelecionado, setTamanhoSelecionado] = useState("");
   const [numItens, setNumItens] = useState(1);
   const [imagemAtiva, setImagemAtiva] = useState(0);
 
+  const novoID = itens.length+1;
 
   let produto = {
-    id: id,
+    id: novoID,
     legenda: routeInfo.legenda,
     preço: routeInfo.preço,
     review: routeInfo.review,
