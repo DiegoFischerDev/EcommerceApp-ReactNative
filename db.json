@@ -79,6 +79,23 @@
       "valorTotalDoPedido": 1220,
       "status": "Confirmado",
       "previsãoDeEntrega": "12/04/2023"
+    },
+    {
+      "id": "2302072",
+      "itens": [
+        {
+          "id": 1,
+          "legenda": "Camisa Longa Branca",
+          "preço": 200,
+          "review": 3.8,
+          "reviewqtd": 80,
+          "tamanho": "M",
+          "quantidade": 1
+        }
+      ],
+      "valorTotalDoPedido": 220,
+      "status": "Aguardando Confirmação da Loja",
+      "previsãoDeEntrega": "12/04/2023"
     }
   ]
 }

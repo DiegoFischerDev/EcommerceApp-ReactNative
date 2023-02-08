@@ -4,6 +4,7 @@ import FinalizarCompraModal from './FinalizarCompraModal';
 import { GlobalContext } from '../../../context/GlobalContext';
 import { useObterPedidosDaApi } from '../../../hooks/useObterPedidosDaApi';
 import axios from "axios";
+import { baseURL } from "../../../serviços";
 
 const ResumoCompra = () => {
 
@@ -25,9 +26,8 @@ const ResumoCompra = () => {
     "previsãoDeEntrega": "12/04/2023"
   }
 
-  const url = 'http://localhost:3000/';
   async function EnviarPedido (pedido) {
-    await axios.post(url+'pedidos', pedido);
+    await axios.post(baseURL+'pedidos', pedido);
   }
 
 
