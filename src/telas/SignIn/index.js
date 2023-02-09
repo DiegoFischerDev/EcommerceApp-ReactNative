@@ -1,15 +1,38 @@
-import React from 'react'
-import {StyleSheet, Text, View, TouchableOpacity, StatusBar, Linking, TextInput,
-} from 'react-native'
+import React, { useEffect, useState } from 'react'
+import {StyleSheet, Text, View, TouchableOpacity, StatusBar, Linking, TextInput } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcon from "react-native-vector-icons/MaterialCommunityIcons";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function SingIn() {
 
   const navigation = useNavigation();
 
-  function loginButton () {
-    navigation.navigate('Loja')
+  function loginButton() {
+    
+    if (nome != "" || email != "" || senha != "") {
+      salvarDadosLogIn()
+    }
+    
+    navigation.navigate("TabRotas")
+
+  }
+
+  const [nome, setNome] = useState("")
+  const [email, setEmail] = useState("")
+  const [senha, setSenha] = useState("")
+
+  const salvarDadosLogIn = async () => {
+    const usuario = {
+        id: "1",
+        nome: nome,
+        email: email,
+        senha: senha
+    }
+
+    const jsonValue = JSON.stringify(usuario);
+
+    await AsyncStorage.setItem("usuario", jsonValue).catch((erro) => console.error(erro));
   }
 
 
@@ -56,10 +79,11 @@ function SingIn() {
         </Text>
       </View>
 
-      <TextInput style={estilos.inputBox} placeholder="E-mail" />
-      <TextInput style={[estilos.inputBox, { marginTop: 19 }]} placeholder="Senha" secureTextEntry="true"/>
+      <TextInput style={estilos.inputBox} placeholder="Nome" onChangeText={(nome) => {setNome(nome)}} />
+      <TextInput style={estilos.inputBox} placeholder="E-mail" onChangeText={(email) => {setEmail(email)}}/>
+      <TextInput style={[estilos.inputBox, { marginTop: 19 }]} placeholder="Senha"  secureTextEntry="true" onChangeText={(senha) => {setSenha(senha)}}/>
 
-      <TouchableOpacity style={estilos.buttonOrange} onPress={() => { navigation.navigate("TabRotas") }}>
+      <TouchableOpacity style={estilos.buttonOrange} onPress={()=>{loginButton()}}>
         <Text style={{ color: 'white' }}>Login</Text>
       </TouchableOpacity>
 

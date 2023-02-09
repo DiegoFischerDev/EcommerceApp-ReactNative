@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image, TouchableOpacity,} from 'react-native'
+import { SafeAreaView, Alert, ScrollView, StyleSheet, View, Text, Image, TouchableOpacity,} from 'react-native'
 import oferta1 from '../../../assets/oferta_1.png'
 import oferta2 from '../../../assets/oferta_2.png'
 import Titulo from '../../componentes/Titulo'
@@ -10,8 +10,25 @@ import Ofertas from './componentes/Oferta'
 import { useObterAnunciosDaApi } from '../../hooks/useObterAnunciosDaApi'
 import { useObterPedidosDaApi } from '../../hooks/useObterPedidosDaApi'
 import MeusPedidosCard from './componentes/MeusPedidosCard'
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Home = () => {
+
+  const [nome, setNome] = useState("Usuário Anônimo");
+
+  const obterDadosLogIn = async () => {
+      const jsonValue = await AsyncStorage.getItem("usuario");
+
+      const dados = jsonValue != null ? JSON.parse(jsonValue) : null;
+
+      if (dados) {setNome(dados.nome)}
+
+      return dados;
+  }
+
+  useEffect(() => {
+      obterDadosLogIn();
+  }, [])
 
   const [anuncios, setAnuncios] = useObterAnunciosDaApi();
   const [pedidos, setPedidos] = useObterPedidosDaApi()
@@ -21,41 +38,43 @@ const Home = () => {
     <SafeAreaView style={{padding:21}} >
 
       <StatusB/>
+      <ScrollView showsVerticalScrollIndicator={false}>
 
-      <HeaderBemVindo UsuarioName={"Diego Fischer de Araujo"}/>
+        <HeaderBemVindo UsuarioName={nome}/>
 
-      <Text style={{fontWeight:'700', marginTop: 15, marginLeft: 15}}>Meus Pedidos</Text>
+        <Text style={{fontWeight:'700', marginTop: 15, marginLeft: 15}}>Meus Pedidos</Text>
 
-        {pedidos?.map((pedido, indice) => {
-          return (
-            <MeusPedidosCard id={pedido.id} valorTotal={pedido.valorTotalDoPedido} status={pedido.status} dataDaEntrega={pedido.previsãoDeEntrega} key={indice} />
-        )})}
-
-      <View>
-        <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-
-          {anuncios?.map((anuncio, indice) => {
+          {pedidos?.map((pedido, indice) => {
             return (
-              <HorizontalCard titulo={anuncio.titulo} descricao={anuncio.descricao} key={indice} />
+              <MeusPedidosCard id={pedido.id} valorTotal={pedido.valorTotalDoPedido} status={pedido.status} dataDaEntrega={pedido.previsãoDeEntrega} key={indice} />
           )})}
 
-        </ScrollView>
-      </View>
+        <View>
+          <ScrollView showsHorizontalScrollIndicator={false} horizontal>
 
-      <View style={{paddingHorizontal:21}}>
-      <Titulo TituloText={'Ofertas Incríveis'}/>
-      </View>
+            {anuncios?.map((anuncio, indice) => {
+              return (
+                <HorizontalCard titulo={anuncio.titulo} descricao={anuncio.descricao} key={indice} />
+            )})}
 
-      <View style={{flexDirection: 'row' }}>
-        <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-          <Image source={oferta1} style={estilos.ofertaImage}></Image>
-          <Image source={oferta2} style={estilos.ofertaImage}></Image>
-          <Image source={oferta1} style={estilos.ofertaImage}></Image>
-          <Image source={oferta2} style={estilos.ofertaImage}></Image>
-        </ScrollView>
-      </View>
+          </ScrollView>
+        </View>
 
-      <Ofertas />
+        <View style={{paddingHorizontal:21}}>
+        <Titulo TituloText={'Ofertas Incríveis'}/>
+        </View>
+
+        <View style={{flexDirection: 'row' }}>
+          <ScrollView showsHorizontalScrollIndicator={false} horizontal>
+            <Image source={oferta1} style={estilos.ofertaImage}></Image>
+            <Image source={oferta2} style={estilos.ofertaImage}></Image>
+            <Image source={oferta1} style={estilos.ofertaImage}></Image>
+            <Image source={oferta2} style={estilos.ofertaImage}></Image>
+          </ScrollView>
+        </View>
+
+        <Ofertas />
+      </ScrollView>
 
     </SafeAreaView>
   )

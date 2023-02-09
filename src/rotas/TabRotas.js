@@ -11,9 +11,7 @@ const Tab = createBottomTabNavigator();
 const TabRotas = () => {
 
   const { itens } = useContext(GlobalContext);
-
   let variavel = {}
-
   itens.length ? variavel = {tabBarBadge: itens.length} : variavel = {}
 
   return (
