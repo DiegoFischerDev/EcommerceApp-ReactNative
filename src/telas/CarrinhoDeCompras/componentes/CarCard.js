@@ -110,6 +110,4 @@ const estilos = StyleSheet.create({
     justifyContent: 'center',
   },
 
-
-  
 })

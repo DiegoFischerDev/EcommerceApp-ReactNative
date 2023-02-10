@@ -11,6 +11,7 @@ import { useObterAnunciosDaApi } from '../../hooks/useObterAnunciosDaApi'
 import { useObterPedidosDaApi } from '../../hooks/useObterPedidosDaApi'
 import MeusPedidosCard from './componentes/MeusPedidosCard'
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import ModalVerPedido from './componentes/ModalVerPedido'
 
 const Home = () => {
 
@@ -18,11 +19,10 @@ const Home = () => {
 
   const obterDadosLogIn = async () => {
       const jsonValue = await AsyncStorage.getItem("usuario");
-
       const dados = jsonValue != null ? JSON.parse(jsonValue) : null;
-
       if (dados) {setNome(dados.nome)}
 
+      console.log("Pediu DadosLogin para Memoria Local")
       return dados;
   }
 
@@ -32,6 +32,10 @@ const Home = () => {
 
   const [anuncios, setAnuncios] = useObterAnunciosDaApi();
   const [pedidos, setPedidos] = useObterPedidosDaApi()
+  const [visivel, setVisivel] = useState(false)
+  const [IdDoPedidoQueOMOdalExibe, SetIdDoPedidoQueOMOdalExibe] = useState(0)
+
+  console.log("Carregou Home")
 
   return (
 
@@ -46,7 +50,7 @@ const Home = () => {
 
           {pedidos?.map((pedido, indice) => {
             return (
-              <MeusPedidosCard id={pedido.id} valorTotal={pedido.valorTotalDoPedido} status={pedido.status} dataDaEntrega={pedido.previsãoDeEntrega} key={indice} />
+              <MeusPedidosCard id={pedido.id} setVisivel={setVisivel} SetIdDoPedidoQueOMOdalExibe={SetIdDoPedidoQueOMOdalExibe} valorTotal={pedido.valorTotalDoPedido} status={pedido.status} dataDaEntrega={pedido.previsãoDeEntrega} key={indice} />
           )})}
 
         <View>
@@ -75,6 +79,8 @@ const Home = () => {
 
         <Ofertas />
       </ScrollView>
+
+      <ModalVerPedido visivel={visivel} setVisivel={setVisivel} pedidos={pedidos} IdDoPedidoQueOMOdalExibe={IdDoPedidoQueOMOdalExibe} />
 
     </SafeAreaView>
   )

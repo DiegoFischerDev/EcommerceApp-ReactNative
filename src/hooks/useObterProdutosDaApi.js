@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
-import { api } from "../serviços";
+import { useState, useEffect } from 'react'
+import { obterProdutos } from '../serviços'
 
-export function useObterProdutosDaApi () {
-
+export const useObterProdutosDaApi = () => {
   const [produtos, setProdutos] = useState([])
 
-  async function ObterProdutos (setProdutos) {
-    await api.get("/produtos").then((response) => setProdutos(response.data))
-    .catch((erro) => console.error(erro));
-  }
+  useEffect(() => {
+    obterProdutos('/produtos', setProdutos)
+  }, [])
 
-  useEffect (() => {
-    ObterProdutos(setProdutos)
-  }, [produtos]);
-
+  console.log('Solicitou Produtos para API')
   return [produtos, setProdutos]
 }

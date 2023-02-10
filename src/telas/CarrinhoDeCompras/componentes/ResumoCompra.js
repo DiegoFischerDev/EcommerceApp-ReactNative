@@ -16,7 +16,7 @@ const ResumoCompra = () => {
   let taxaDeEntrega = subtotal === 0 ? 0 : 20;
   let total = subtotal - voucher + taxaDeEntrega;
 
-  const [pedidos, setPedidos] = useObterPedidosDaApi()
+  const [pedidos, setPedidos] = useObterPedidosDaApi([])
 
   let pedido = {
     "id": "230207"+(pedidos.length+1),
@@ -27,7 +27,9 @@ const ResumoCompra = () => {
   }
 
   async function EnviarPedido (pedido) {
-    await axios.post(baseURL+'pedidos', pedido);
+    console.log("Enviando novo Pedido...")
+    await axios.post(baseURL+'/pedidos', pedido);
+    console.log("Enviou novo Pedido para API")
   }
 
 
@@ -79,7 +81,7 @@ const ResumoCompra = () => {
 
       <FinalizarCompraModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
 
-      <TouchableOpacity style={estilos.orangeButton} onPress={() => {setModalVisible(true); EnviarPedido (pedido)}}>
+      <TouchableOpacity style={estilos.orangeButton} onPress={() => {setModalVisible(true); EnviarPedido(pedido)}}>
         <Text style={estilos.textoBotao}>Finalizar Compra</Text>
       </TouchableOpacity>
     </View>

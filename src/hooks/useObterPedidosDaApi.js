@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
-import { api } from "../serviços";
+import { useState, useEffect } from 'react'
+import { obterPedidos } from '../serviços'
 
-export function useObterPedidosDaApi () {
-
+export const useObterPedidosDaApi = () => {
   const [pedidos, setPedidos] = useState([])
 
-  async function ObterPedidos (setPedidos) {
-    await api.get("/pedidos").then((response) => setPedidos(response.data))
-    .catch((erro) => console.error(erro));
-  }
+  useEffect(() => {
+    obterPedidos('/pedidos', setPedidos)
+  }, [])
 
-  useEffect (() => {
-    ObterPedidos(setPedidos)
-  }, [pedidos]);
-
+  console.log('Solicitou Pedidos para API')
   return [pedidos, setPedidos]
 }

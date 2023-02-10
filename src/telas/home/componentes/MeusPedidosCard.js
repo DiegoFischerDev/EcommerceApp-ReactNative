@@ -2,14 +2,14 @@ import react from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 
-const MeusPedidosCard = ({id, valorTotal, status, dataDaEntrega}) => {
+const MeusPedidosCard = ({id, setVisivel, SetIdDoPedidoQueOMOdalExibe, valorTotal, status, dataDaEntrega}) => {
 
   return(
     <View style={estilos.meusPedidos}>
       <View>
         <View style={{flexDirection:'row', justifyContent: "space-between"}}>
           <Text>Pedido: {id}</Text>
-          <TouchableOpacity><Text style={{color: 'orange'}}>Ver Pedido</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => {SetIdDoPedidoQueOMOdalExibe(id); setVisivel(true)}}><Text style={{color: 'orange'}}>Ver Pedido</Text></TouchableOpacity>
         </View>
         <Text>Valor Total: R${valorTotal}</Text>
         <View style={{flexDirection:'row'}}>

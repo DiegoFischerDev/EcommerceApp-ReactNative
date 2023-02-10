@@ -64,7 +64,7 @@
           "review": 3.8,
           "reviewqtd": 80,
           "tamanho": "M",
-          "quantidade": 2
+          "quantidade": 1
         },
         {
           "id": 2,
@@ -72,12 +72,30 @@
           "preço": 300,
           "review": 4.9,
           "reviewqtd": 80,
+          "tamanho": "M",
+          "quantidade": 1
+        },
+        {
+          "id": 3,
+          "legenda": "Camisa Longa Branca",
+          "preço": 200,
+          "review": 3.8,
+          "reviewqtd": 80,
+          "tamanho": "G",
+          "quantidade": 1
+        },
+        {
+          "id": 4,
+          "legenda": "Camisa Sem Manga",
+          "preço": 400,
+          "review": 4.5,
+          "reviewqtd": 80,
           "tamanho": "GG",
-          "quantidade": 3
+          "quantidade": 1
         }
       ],
-      "valorTotalDoPedido": 1220,
-      "status": "Confirmado",
+      "valorTotalDoPedido": 1020,
+      "status": "Aguardando Confirmação da Loja",
       "previsãoDeEntrega": "12/04/2023"
     },
     {
@@ -85,127 +103,24 @@
       "itens": [
         {
           "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "M",
-          "quantidade": 1
-        }
-      ],
-      "valorTotalDoPedido": 220,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302073",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
+          "legenda": "Camisa Rosa",
+          "preço": 500,
+          "review": 4.7,
           "reviewqtd": 80,
           "tamanho": "G",
           "quantidade": 1
         },
         {
           "id": 2,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
+          "legenda": "Camisa Sem Manga",
+          "preço": 400,
+          "review": 4.5,
           "reviewqtd": 80,
-          "tamanho": "M",
+          "tamanho": "G",
           "quantidade": 1
         }
       ],
-      "valorTotalDoPedido": 420,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302074",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 2
-        },
-        {
-          "id": 2,
-          "legenda": "Camisa Preta",
-          "preço": 300,
-          "review": 4.9,
-          "reviewqtd": 80,
-          "tamanho": "M",
-          "quantidade": 4
-        }
-      ],
-      "valorTotalDoPedido": 1520,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302075",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 3
-        }
-      ],
-      "valorTotalDoPedido": 520,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302076",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 4
-        },
-        {
-          "id": 2,
-          "legenda": "Camisa Preta",
-          "preço": 300,
-          "review": 4.9,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 3
-        }
-      ],
-      "valorTotalDoPedido": 1620,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302077",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 14
-        }
-      ],
-      "valorTotalDoPedido": 2820,
+      "valorTotalDoPedido": 920,
       "status": "Aguardando Confirmação da Loja",
       "previsãoDeEntrega": "12/04/2023"
     }

@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
-import { api } from "../serviços";
+import { useState, useEffect } from 'react'
+import { obterAnuncios } from '../serviços'
 
-export function useObterAnunciosDaApi () {
-
+export const useObterAnunciosDaApi = () => {
   const [anuncios, setAnuncios] = useState([])
-  
-  async function ObterAnuncios (setAnuncios) {
-    await api.get("/anuncios").then((response) => setAnuncios(response.data))
-    .catch((erro) => console.error(erro));
-  }
-  
-  useEffect (() => {
-    ObterAnuncios(setAnuncios)
-  }, [anuncios]);
 
+  useEffect(() => {
+    obterAnuncios('/anuncios', setAnuncios)
+  }, [])
+
+  console.log('Solicitou Anuncios para API')
   return [anuncios, setAnuncios]
 }
