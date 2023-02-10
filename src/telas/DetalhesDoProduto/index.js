@@ -13,8 +13,6 @@ import modelo4 from "../../../assets/modelo_4.png";
 import { GlobalContext } from '../../context/GlobalContext'
 import ComprasModal from '../../componentes/ComprasModal'
 
-const imagens = [modelo1, modelo2, modelo3, modelo4];
-
 
 const DetalhesDoProduto = ({ route }) => {
 
@@ -31,6 +29,8 @@ const DetalhesDoProduto = ({ route }) => {
 
   const novoID = itens.length+1;
 
+  const imagens = [routeInfo.imagem1, routeInfo.imagem2, routeInfo.imagem3, routeInfo.imagem4];
+
   let produto = {
     id: novoID,
     legenda: routeInfo.legenda,
@@ -38,9 +38,9 @@ const DetalhesDoProduto = ({ route }) => {
     review: routeInfo.review,
     reviewqtd: routeInfo.reviewqtd,
     tamanho: TamanhoSelecionado,
-    quantidade: numItens
+    quantidade: numItens,
+    imagens: imagens
   }
-
 
   return (
 

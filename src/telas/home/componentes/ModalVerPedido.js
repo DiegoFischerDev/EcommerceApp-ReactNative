@@ -1,13 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React from 'react'
 import { Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import ItemDoModal from './ItemDoModal'
 import axios from "axios";
 import { baseURL } from "../../../serviços";
-import { useObterPedidosDaApi } from '../../../hooks/useObterPedidosDaApi'
+import { obterPedidos } from '../../../serviços'
 
 
-const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos}) => {
+const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos, setPedidos}) => {
 
+  console.log(pedidos)
 
   const filtroPedidos = pedidos.filter(function(pedido){
     if (pedido.id == IdDoPedidoQueOMOdalExibe) { 
@@ -33,7 +34,7 @@ const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos}
       >
         <View style={estilos.container}>
           <View style={estilos.modal}>
-            <TouchableOpacity onPress={() => {setVisivel(false)}} style={{width:300}}><Text style={{alignSelf:'flex-end', fontSize:20}}>X</Text></TouchableOpacity>
+            <TouchableOpacity onPress={() => {setVisivel(false)}} style={{width:300, paddingTop: 50, paddingBottom:20}}><Text style={{alignSelf:'flex-end', fontSize:20}}>X</Text></TouchableOpacity>
             <Text style={estilos.texto}>Pedido Numero: {filtroPedidos[0]?.id}</Text>
             <Text style={estilos.texto}>Valor Total: R${filtroPedidos[0]?.valorTotalDoPedido}</Text>
             <View style={{flexDirection:'row'}}>
@@ -49,21 +50,28 @@ const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos}
               )})}
             </ScrollView>
 
-            <TouchableOpacity
-              style={estilos.botao}
-              onPress={() => {
-                ExcluirPedido(IdDoPedidoQueOMOdalExibe);
-                setVisivel(false);
-                // !!botao.link && navigation.navigate(botao.link)
-                // !!finalizarCompra && esvaziarCarrinho()
+            <View style={{flexDirection:'row'}}>
 
-                // if (finalizarCompra) {
-                //     esvaziarCarrinho()
-                // }
-              }}
-            >
-              <Text style={estilos.textoBotao}>Cancelar Pedido</Text>
-            </TouchableOpacity>
+              <TouchableOpacity
+                style={estilos.botao}
+                onPress={() => {}}
+              >
+                <Text style={estilos.textoBotao}>Gerar Nota Fiscal</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={estilos.botao}
+                onPress={() => {
+                  ExcluirPedido(IdDoPedidoQueOMOdalExibe);
+                  setVisivel(false);
+                  obterPedidos('/pedidos', setPedidos); // para atualizar a pagina
+
+                }}
+              >
+                <Text style={estilos.textoBotao}>Cancelar Pedido</Text>
+              </TouchableOpacity>
+            </View>
+            <Text style={{fontSize:12}}>Se arrependeu da compra? Cancele seu pedido em até 24hr sem nenhuma burocracia. Em caso de dúvidas, entre em contato com nosso SAC. 0800 2524-2326</Text>
           </View>
         </View>
       </Modal>
@@ -72,6 +80,7 @@ const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos}
 }
 
 export default ModalVerPedido
+
 
 const estilos = StyleSheet.create({
   container: {
@@ -105,7 +114,7 @@ const estilos = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     backgroundColor: '#FF7A00',
-    marginTop: 20,
+    margin: 20,
   },
   textoBotao: {
     color: '#fff',

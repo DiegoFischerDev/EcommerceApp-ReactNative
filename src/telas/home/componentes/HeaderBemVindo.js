@@ -43,13 +43,14 @@ useEffect(() => {
   return (
 
   <View style={estilos.view2}>
+      <TouchableOpacity onPress={selecionarImagem}>
+        <Image source={icone} style={estilos.iconeUsuario} />
+      </TouchableOpacity>
     <View>
       <Text style={{ fontSize: 10 }}>Bem-Vindo!</Text>
       <Text style={{ fontSize: 14, fontWeight: 'bold' }}>{UsuarioName}</Text>
     </View>
-      <TouchableOpacity onPress={selecionarImagem}>
-        <Image source={icone} style={estilos.iconeUsuario} />
-      </TouchableOpacity>
+
   </View>
 
   )
@@ -61,8 +62,6 @@ const estilos = StyleSheet.create({
 
   view2: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 30,
     paddingHorizontal: 20,
     alignItems: 'center',
   },
@@ -70,7 +69,8 @@ const estilos = StyleSheet.create({
   iconeUsuario: {
     width: 50,
     height: 50,
-    borderRadius: 25
+    borderRadius: 25,
+    marginRight: 10,
 }
 
 })

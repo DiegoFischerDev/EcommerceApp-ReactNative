@@ -1,10 +1,9 @@
 import React from "react";
 import { View, Image, StyleSheet, Text, TouchableOpacity,} from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import modelo1 from '../../assets/modelo_1.png'
 import { useNavigation } from '@react-navigation/native';
 
-const ItensRecomendados = ({legenda, preço, review, reviewqtd}) => {
+const ItensRecomendados = ({legenda, preço, review, reviewqtd, imagem1, imagem2, imagem3, imagem4}) => {
 
   const navigation = useNavigation();
 
@@ -12,7 +11,11 @@ const ItensRecomendados = ({legenda, preço, review, reviewqtd}) => {
     legenda: legenda,
     preço: preço,
     review: review,
-    reviewqtd: reviewqtd
+    reviewqtd: reviewqtd,
+    imagem1: imagem1,
+    imagem2: imagem2,
+    imagem3: imagem3,
+    imagem4: imagem4
   }
 
   return (
@@ -28,13 +31,13 @@ const ItensRecomendados = ({legenda, preço, review, reviewqtd}) => {
             <Ionicons name="heart-outline" size={22} color="black" />
           </TouchableOpacity>
         </View>
-        <Image source={modelo1} style={estilos.itemImage}></Image>
+        <Image source={{uri: imagem1}} style={estilos.itemImage}></Image>
         <Text style={{ marginTop: 14, marginLeft: 16, fontSize: 12 }}>
           {legenda}
         </Text>
         <View style={estilos.view5}>
           <Text style={{ fontWeight: 'bold', fontSize: 12 }}>
-          {preço}
+          R$ {preço}
           </Text>
           <TouchableOpacity style={estilos.view6} onPress={() => { navigation.navigate("DetalhesDoProduto", produtoInfo)}}>
             <Ionicons name="arrow-forward-outline" size={20} color="black" />
@@ -116,11 +119,9 @@ const estilos = StyleSheet.create({
   },
 
   itemImage: {
-    marginTop: -1,
+    marginTop: 25,
     height: 180,
     width: '100%',
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
   },
 
 })

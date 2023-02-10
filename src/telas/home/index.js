@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { SafeAreaView, Alert, ScrollView, StyleSheet, View, Text, Image, TouchableOpacity,} from 'react-native'
+import React, { useContext, useEffect, useState } from 'react'
+import { SafeAreaView, ScrollView, StyleSheet, View, Text, Image,} from 'react-native'
 import oferta1 from '../../../assets/oferta_1.png'
 import oferta2 from '../../../assets/oferta_2.png'
 import Titulo from '../../componentes/Titulo'
@@ -12,8 +12,16 @@ import { useObterPedidosDaApi } from '../../hooks/useObterPedidosDaApi'
 import MeusPedidosCard from './componentes/MeusPedidosCard'
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import ModalVerPedido from './componentes/ModalVerPedido'
+import { obterPedidos } from '../../serviços'
+import { GlobalContext } from "../../context/GlobalContext";
 
 const Home = () => {
+
+  const { novaCompra } = useContext(GlobalContext);
+
+  useEffect(() => {
+    obterPedidos('/pedidos', setPedidos)
+  }, [novaCompra])
 
   const [nome, setNome] = useState("Usuário Anônimo");
 
@@ -37,50 +45,56 @@ const Home = () => {
 
   console.log("Carregou Home")
 
+  let displayTitulo
+  if(pedidos.length==0){displayTitulo=""}else[displayTitulo="Meus Pedidos"]
+
   return (
 
-    <SafeAreaView style={{padding:21}} >
+    <SafeAreaView style={{padding:21, backgroundColor:'white'}} >
 
-      <StatusB/>
       <ScrollView showsVerticalScrollIndicator={false}>
+        <StatusB/>
+        <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676051398/logopng_oifmjg.png"}} style={estilos.image}></Image>
 
         <HeaderBemVindo UsuarioName={nome}/>
 
-        <Text style={{fontWeight:'700', marginTop: 15, marginLeft: 15}}>Meus Pedidos</Text>
+        <Text style={{fontWeight:'700', marginTop: 15, marginLeft: 15}}>{displayTitulo}</Text>
 
           {pedidos?.map((pedido, indice) => {
             return (
               <MeusPedidosCard id={pedido.id} setVisivel={setVisivel} SetIdDoPedidoQueOMOdalExibe={SetIdDoPedidoQueOMOdalExibe} valorTotal={pedido.valorTotalDoPedido} status={pedido.status} dataDaEntrega={pedido.previsãoDeEntrega} key={indice} />
           )})}
 
-        <View>
+
+          <View style={{paddingHorizontal:20}}>
+            <Titulo TituloText={'Ofertas!'}/>
+          </View>
           <ScrollView showsHorizontalScrollIndicator={false} horizontal>
 
             {anuncios?.map((anuncio, indice) => {
               return (
-                <HorizontalCard titulo={anuncio.titulo} descricao={anuncio.descricao} key={indice} />
+                <HorizontalCard uri={anuncio.uri} key={indice} />
             )})}
 
           </ScrollView>
-        </View>
 
-        <View style={{paddingHorizontal:21}}>
-        <Titulo TituloText={'Ofertas Incríveis'}/>
+        <View style={{paddingHorizontal:20}}>
+        <Titulo TituloText={'Recomendados para '+nome}/>
         </View>
 
         <View style={{flexDirection: 'row' }}>
           <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-            <Image source={oferta1} style={estilos.ofertaImage}></Image>
-            <Image source={oferta2} style={estilos.ofertaImage}></Image>
-            <Image source={oferta1} style={estilos.ofertaImage}></Image>
-            <Image source={oferta2} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg"}} style={estilos.ofertaImage}></Image>
           </ScrollView>
         </View>
 
         <Ofertas />
       </ScrollView>
 
-      <ModalVerPedido visivel={visivel} setVisivel={setVisivel} pedidos={pedidos} IdDoPedidoQueOMOdalExibe={IdDoPedidoQueOMOdalExibe} />
+      <ModalVerPedido visivel={visivel} setVisivel={setVisivel} pedidos={pedidos} setPedidos={setPedidos} IdDoPedidoQueOMOdalExibe={IdDoPedidoQueOMOdalExibe} />
 
     </SafeAreaView>
   )
@@ -90,11 +104,17 @@ export default Home
 
 const estilos = StyleSheet.create({
 
+  image: {
+    width: 80,
+    height: 80,
+    alignSelf: 'center',
+  },
+
   ofertaImage: {
     width: 180,
     height: 200,
     marginLeft: 15,
-    borderTopLeftRadius: 10
+    borderRadius: 15,
   },
   
 })

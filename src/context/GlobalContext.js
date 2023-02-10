@@ -5,6 +5,7 @@ export const GlobalContext = createContext({});
 
 export const ComprasProvider = ({ children }) => {
     const [itens, setItens] = useState([]);
+    const [novaCompra, setNovaCompra] = useState(0);
 
     useEffect(() => {
         obterItensDoCarrinhoArmazenadosLocalmente(setItens)
@@ -61,7 +62,7 @@ export const ComprasProvider = ({ children }) => {
     }, [itens])
 
     return (
-        <GlobalContext.Provider value={{ itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
+        <GlobalContext.Provider value={{ novaCompra, setNovaCompra, itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
             {children}
         </GlobalContext.Provider>
     )

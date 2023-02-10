@@ -4,21 +4,14 @@ import imageCelular1 from "../../../../assets/celular_1.png"
 
 
 
-const HorizontalCard = ({titulo, descricao}) => {
+const HorizontalCard = ({uri}) => {
 
   return (
     <View>
 
-      <View style={estilos.cartao}>
-        <View style={{width:175, height: 140, paddingRight: 10}}>
-          <Text style={{fontSize:14, fontWeight: 'bold', marginBottom: 10, marginTop:20}}>{titulo}</Text>
-          <Text style={{marginBottom: 20, fontSize:10}}>{descricao}</Text>
-          <TouchableOpacity style= {estilos.cartaoButton}>
-            <Text style={{color:'white', fontSize: 12, fontWeight:'bold'}}>Saiba Mais</Text>
-          </TouchableOpacity>
-        </View>
-        <Image source={imageCelular1} style={{width:140, height: 140}}></Image>
-      </View>
+      <TouchableOpacity style={estilos.cartao}>
+        <Image source={{uri: uri}} style={estilos.image}></Image>
+      </TouchableOpacity>
 
     </View>
   )
@@ -32,14 +25,22 @@ const estilos = StyleSheet.create({
     marginBottom: 10,
     marginTop:30,
     marginLeft: 15,
-    backgroundColor: 'white',
     width: 350,
     height: 180,
-    padding: 17,
     borderRadius: 10,
     flexDirection: 'row',
-    borderColor: '#FFA959',
-    borderWidth: 1,
+    alignItems:'flex-end',
+
+    backgroundColor: 'white',
+    shadowColor: "#000",
+    shadowOffset: {
+	  width: 0,
+	  height: 1,
+    },
+    shadowOpacity: 0.20,
+    shadowRadius: 1.41,
+    elevation: 2,
+
   },
 
   cartaoButton: {
@@ -49,6 +50,15 @@ const estilos = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
+    margin: 10,
+  },
+
+  image: {
+    width:'100%',
+    height: '100%',
+    position:'absolute',
+    zIndex: -1,
+    borderRadius: 10
   },
 
 })

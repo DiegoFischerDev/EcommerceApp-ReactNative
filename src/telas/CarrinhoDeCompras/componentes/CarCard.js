@@ -25,7 +25,7 @@ const CarCard = ({id}) => {
   return (
     <View style={estilos.card}>
 
-      <Image style={estilos.image} source={modelo1}></Image>
+      <Image style={estilos.image} source={itens[id-1].imagens}></Image>
 
       <View style={estilos.inerCard1}>
         <Text style={{fontSize: 10}}>{itens[id-1].legenda}</Text>

@@ -81,7 +81,7 @@ const ResumoCompra = () => {
 
       <FinalizarCompraModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
 
-      <TouchableOpacity style={estilos.orangeButton} onPress={() => {setModalVisible(true); EnviarPedido(pedido)}}>
+      <TouchableOpacity style={estilos.orangeButton} onPress={() => {setModalVisible(true); EnviarPedido(pedido);}}>
         <Text style={estilos.textoBotao}>Finalizar Compra</Text>
       </TouchableOpacity>
     </View>

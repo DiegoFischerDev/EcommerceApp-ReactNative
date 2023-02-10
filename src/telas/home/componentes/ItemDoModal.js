@@ -4,11 +4,12 @@ import modelo1 from '../../../../assets/modelo_1.png'
 
 const ItemDoModal = ({item}) => {
 
+  console.log(item)
 
   return (
     <View style={estilos.card}>
 
-      <Image style={estilos.image} source={modelo1}></Image>
+      <Image style={estilos.image} source={item.imagens}></Image>
 
       <View style={estilos.inerCard1}>
         <Text style={{fontSize: 10}}>{item.legenda}</Text>

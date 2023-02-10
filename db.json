@@ -2,127 +2,68 @@
   "produtos": [
     {
       "id": 1,
-      "legenda": "Camisa Longa Branca",
-      "preço": 200,
-      "review": 3.8,
-      "reviewqtd": 80
+      "legenda": "Short Praia Dijon",
+      "preço": 65,
+      "review": 4.8,
+      "reviewqtd": 45,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     },
     {
       "id": 2,
-      "legenda": "Camisa Preta",
-      "preço": 300,
-      "review": 4.9,
-      "reviewqtd": 80
+      "legenda": "Short Praia Ibiza",
+      "preço": 65,
+      "review": 5,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     },
     {
       "id": 3,
-      "legenda": "Camisa Rosa",
-      "preço": 500,
+      "legenda": "Short Praia Leblon",
+      "preço": 65,
       "review": 4.7,
-      "reviewqtd": 80
+      "reviewqtd": 32,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon1_oz7kq6.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     },
     {
       "id": 4,
-      "legenda": "Camisa Sem Manga",
-      "preço": 400,
+      "legenda": "Short Praia Paiva",
+      "preço": 65,
       "review": 4.5,
-      "reviewqtd": 80
-    },
-    {
-      "id": 5,
-      "legenda": "Camisa Longa Preta",
-      "preço": 100,
-      "review": 4.2,
-      "reviewqtd": 80
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/Praia_Paiva1_ug99g0.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     }
   ],
   "anuncios": [
     {
       "id": 1,
-      "titulo": "Troque e Economize Muito!",
-      "descricao": "Desfrute de uma ótima economia"
+      "titulo": "",
+      "descricao": "",
+      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o_jhr7tq.jpg"
     },
     {
       "id": 2,
-      "titulo": "Curso React JS",
-      "descricao": "Segundas e Quartas"
+      "titulo": "",
+      "descricao": "",
+      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o1_mexzwx.jpg"
     },
     {
       "id": 3,
-      "titulo": "Curso Java Experience",
-      "descricao": "Depois do Carnaval"
+      "titulo": "",
+      "descricao": "",
+      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o2_oj4iku.jpg"
     }
   ],
-  "pedidos": [
-    {
-      "id": "2302071",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "M",
-          "quantidade": 1
-        },
-        {
-          "id": 2,
-          "legenda": "Camisa Preta",
-          "preço": 300,
-          "review": 4.9,
-          "reviewqtd": 80,
-          "tamanho": "M",
-          "quantidade": 1
-        },
-        {
-          "id": 3,
-          "legenda": "Camisa Longa Branca",
-          "preço": 200,
-          "review": 3.8,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 1
-        },
-        {
-          "id": 4,
-          "legenda": "Camisa Sem Manga",
-          "preço": 400,
-          "review": 4.5,
-          "reviewqtd": 80,
-          "tamanho": "GG",
-          "quantidade": 1
-        }
-      ],
-      "valorTotalDoPedido": 1020,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302072",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Rosa",
-          "preço": 500,
-          "review": 4.7,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 1
-        },
-        {
-          "id": 2,
-          "legenda": "Camisa Sem Manga",
-          "preço": 400,
-          "review": 4.5,
-          "reviewqtd": 80,
-          "tamanho": "G",
-          "quantidade": 1
-        }
-      ],
-      "valorTotalDoPedido": 920,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    }
-  ]
+  "pedidos": []
 }

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export const baseURL = "https://4e2c-191-243-26-45.sa.ngrok.io"     // baseURL: "http://localhost:3000"
+export const baseURL = "https://e7df-179-182-100-244.sa.ngrok.io"     // baseURL: "http://localhost:3000"
 
 const api = axios.create({
     baseURL: baseURL
@@ -22,6 +22,7 @@ export const obterProdutos = async (url, setProdutos) => {
 }
 
 export const obterPedidos = async (url, setPedidos) => {
+    
   await api.get(url)
       .then(resultado => {
           setPedidos(resultado.data)

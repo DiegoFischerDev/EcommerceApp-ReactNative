@@ -35,7 +35,7 @@ const Loja = () => {
 
           {produtos?.map((produto, indice) => {
             return (
-             <ItensRecomendados legenda={produto.legenda} preço={produto.preço} review={produto.review} reviewqtd={produto.reviewqtd} key={indice} />
+             <ItensRecomendados legenda={produto.legenda} preço={produto.preço} review={produto.review} reviewqtd={produto.reviewqtd} imagem1={produto.imagem1} imagem2={produto.imagem2} imagem3={produto.imagem3} imagem4={produto.imagem4} key={indice} />
             )
           })}
 
