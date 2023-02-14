@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import { obterProdutos } from '../serviços'
 
-export const useObterProdutosDaApi = () => {
+export const useObterProdutosDaApi = (Url) => {
   const [produtos, setProdutos] = useState([])
 
   useEffect(() => {
-    obterProdutos('/produtos', setProdutos)
+    obterProdutos(Url, setProdutos)
   }, [])
 
   console.log('Solicitou Produtos para API')

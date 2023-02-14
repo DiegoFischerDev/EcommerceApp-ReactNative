@@ -1,15 +1,15 @@
 {
-  "produtos": [
+  "Shorts": [
     {
       "id": 1,
       "legenda": "Short Praia Dijon",
       "preço": 65,
       "review": 4.8,
       "reviewqtd": 45,
-      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
-      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
-      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon1_sqquh3.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon2_npa4zv.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png"
     },
     {
       "id": 2,
@@ -17,9 +17,9 @@
       "preço": 65,
       "review": 5,
       "reviewqtd": 82,
-      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
-      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
-      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano1_c9yjms.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
       "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     },
     {
@@ -28,9 +28,9 @@
       "preço": 65,
       "review": 4.7,
       "reviewqtd": 32,
-      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg",
-      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon1_oz7kq6.jpg",
-      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Leblon_k6tfwb.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Leblon1_oz7kq6.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
       "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     },
     {
@@ -39,10 +39,89 @@
       "preço": 65,
       "review": 4.5,
       "reviewqtd": 20,
-      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg",
-      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/Praia_Paiva1_ug99g0.jpg",
-      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Paiva_kdrqbd.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/Praia_Paiva1_ug99g0.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
       "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+    }
+  ],
+  "Camisas": [
+    {
+      "id": 1,
+      "legenda": "Camisa Linho Flamingo",
+      "preço": 125,
+      "review": 4.8,
+      "reviewqtd": 45,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo_pby7xj.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo2_ipzrf2.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 2,
+      "legenda": "Camisa Linho Lemon",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon_ek9psp.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon3_ufwlqc.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon2_ofihxr.jpg"
+    },
+    {
+      "id": 3,
+      "legenda": "Camisa Linho Mango",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Mango_nsjm2z.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Mango2_vzlrqy.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 4,
+      "legenda": "Camisa Linho Marinho",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397821/App%20OKA/Camisas/Camisa_Linho_Marinho_ugudfo.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Linho_Marinho2_exo9tz.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 5,
+      "legenda": "Camisa Linho Terracota",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397825/App%20OKA/Camisas/Camisa_Linho_Terracota_b7naip.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397823/App%20OKA/Camisas/Camisa_Linho_Terracota2_ibcp8l.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 6,
+      "legenda": "Camisa Office Azul Listra Bold",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397822/App%20OKA/Camisas/Camisa_Office_Azul_Listra_Bold_srpn4c.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Office_Azul_Listra_Bold2_volzh2.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 7,
+      "legenda": "Camisa Office Listras Bege",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397827/App%20OKA/Camisas/Camisa_Office_Listras_Bege3_gzsty7.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397827/App%20OKA/Camisas/Camisa_Office_Listras_Bege2_wapj6e.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397825/App%20OKA/Camisas/Camisa_Office_Listras_Bege_jkewzw.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
     }
   ],
   "anuncios": [
@@ -50,19 +129,19 @@
       "id": 1,
       "titulo": "",
       "descricao": "",
-      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o_jhr7tq.jpg"
+      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Ofertas/promo%C3%A7%C3%A3o1_mexzwx.jpg"
     },
     {
       "id": 2,
       "titulo": "",
       "descricao": "",
-      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o1_mexzwx.jpg"
+      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Ofertas/promo%C3%A7%C3%A3o_jhr7tq.jpg"
     },
     {
       "id": 3,
       "titulo": "",
       "descricao": "",
-      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o2_oj4iku.jpg"
+      "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Ofertas/promo%C3%A7%C3%A3o2_oj4iku.jpg"
     }
   ],
   "pedidos": [
@@ -76,53 +155,12 @@
           "review": 4.8,
           "reviewqtd": 45,
           "tamanho": "G",
-          "quantidade": 2,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 2,
-          "legenda": "Short Praia Ibiza",
-          "preço": 65,
-          "review": 5,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 6,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
-          ]
-        }
-      ],
-      "subTotal": 520,
-      "voucher": 0,
-      "taxaDeEntrega": 0,
-      "valorTotalDoPedido": 520,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302072",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Short Praia Dijon",
-          "preço": 65,
-          "review": 4.8,
-          "reviewqtd": 45,
-          "tamanho": "G",
           "quantidade": 1,
           "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon1_sqquh3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon2_npa4zv.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png"
           ]
         },
         {
@@ -134,92 +172,47 @@
           "tamanho": "G",
           "quantidade": 1,
           "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano1_c9yjms.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
           ]
         },
         {
           "id": 3,
-          "legenda": "Short Praia Leblon",
-          "preço": 65,
-          "review": 4.7,
-          "reviewqtd": 32,
-          "tamanho": "GG",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon1_oz7kq6.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 4,
-          "legenda": "Short Praia Paiva",
-          "preço": 65,
-          "review": 4.5,
-          "reviewqtd": 20,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/Praia_Paiva1_ug99g0.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 5,
-          "legenda": "Short Praia Dijon",
-          "preço": 65,
-          "review": 4.8,
-          "reviewqtd": 45,
-          "tamanho": "M",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 6,
-          "legenda": "Short Praia Ibiza",
-          "preço": 65,
-          "review": 5,
+          "legenda": "Camisa Linho Lemon",
+          "preço": 125,
+          "review": 4.9,
           "reviewqtd": 82,
           "tamanho": "G",
           "quantidade": 1,
           "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon_ek9psp.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon3_ufwlqc.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon2_ofihxr.jpg"
           ]
         },
         {
-          "id": 7,
-          "legenda": "Short Praia Leblon",
-          "preço": 65,
-          "review": 4.7,
-          "reviewqtd": 32,
+          "id": 4,
+          "legenda": "Camisa Linho Marinho",
+          "preço": 125,
+          "review": 4.9,
+          "reviewqtd": 82,
           "tamanho": "G",
           "quantidade": 1,
           "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon1_oz7kq6.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397821/App%20OKA/Camisas/Camisa_Linho_Marinho_ugudfo.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Linho_Marinho2_exo9tz.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
           ]
         }
       ],
-      "subTotal": 455,
-      "voucher": 100,
+      "subTotal": 380,
+      "voucher": 0,
       "taxaDeEntrega": 0,
-      "valorTotalDoPedido": 355,
+      "valorTotalDoPedido": 380,
       "status": "Aguardando Confirmação da Loja",
       "previsãoDeEntrega": "12/04/2023"
     }

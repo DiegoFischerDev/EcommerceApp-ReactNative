@@ -7,9 +7,6 @@ const Titulo = ({TituloText}) => {
 
     <View style={estilos.view2}>
       <Text style={{ fontWeight: 'bold', fontSize: 16 }}>{TituloText}</Text>
-      <TouchableOpacity onPress={() => {}}>
-        <Text style={{color:'orange', fontSize:14}}>Ver Tudo</Text>
-      </TouchableOpacity>
     </View>
 
   )

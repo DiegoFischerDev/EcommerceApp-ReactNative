@@ -10,10 +10,17 @@ import StatusB from '../../componentes/StatusB'
 import Titulo from '../../componentes/Titulo'
 import ItensRecomendados from '../../componentes/ItensRecomendados'
 import { useObterProdutosDaApi } from '../../hooks/useObterProdutosDaApi'
+import { obterProdutos } from '../../serviços'
 
 const Loja = () => {
 
-  const [produtos, setProdutos] = useObterProdutosDaApi();
+  const [Url, setUrl] = useState("/shorts")
+  const [categoria, setCategoria] = useState("Shorts")
+  const [produtos, setProdutos] = useObterProdutosDaApi(Url);
+
+  useEffect(() => {
+    obterProdutos(Url, setProdutos)
+  }, [Url])
 
   return (
     
@@ -23,12 +30,12 @@ const Loja = () => {
         <Header />
         <Titulo TituloText={"Comprar por Categoria"} />
         <View style={estilos.view3}>
-        <MiniCard imagem={categoria1} legenda={"Popular"} />
-        <MiniCard imagem={categoria2} legenda={"Homen"} />
-        <MiniCard imagem={categoria3} legenda={"Mulher"} />
-        <MiniCard imagem={categoria4} legenda={"Crianças"} />
+        <MiniCard imagem={"https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg"} legenda={"Shorts"} setUrl={setUrl} setCategoria={setCategoria} categoria={categoria}/>
+        <MiniCard imagem={"https://res.cloudinary.com/di9oiqvom/image/upload/v1676398166/App%20OKA/Camisas/camisas_er99tg.png"} legenda={"Camisas"} setUrl={setUrl} setCategoria={setCategoria} categoria={categoria}/>
+        <MiniCard imagem={"https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg"} legenda={"Calças"} setUrl={setUrl} setCategoria={setCategoria} categoria={categoria}/>
+        <MiniCard imagem={"https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg"} legenda={"Acessórios"} setUrl={setUrl} setCategoria={setCategoria} categoria={categoria}/>
         </View>
-        <Titulo TituloText={"Itens Recomendados"} />
+        <Titulo TituloText={categoria}/>
 
       <ScrollView showsVerticalScrollIndicator={false} scrollEventThrottle={0} >
         <View style={estilos.view8}>

@@ -83,10 +83,10 @@ const Home = () => {
 
         <View style={{flexDirection: 'row' }}>
           <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg"}} style={estilos.ofertaImage}></Image>
-            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg"}} style={estilos.ofertaImage}></Image>
-            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg"}} style={estilos.ofertaImage}></Image>
-            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Paiva_kdrqbd.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Leblon_k6tfwb.jpg"}} style={estilos.ofertaImage}></Image>
+            <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg"}} style={estilos.ofertaImage}></Image>
           </ScrollView>
         </View>
 

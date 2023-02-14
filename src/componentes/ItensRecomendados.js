@@ -54,7 +54,7 @@ const estilos = StyleSheet.create({
   absolute: {
     position: 'absolute',
     left: 0,
-    top: 21,
+    top: 5,
     zIndex: 2,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -65,8 +65,7 @@ const estilos = StyleSheet.create({
 
   view8: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    backgroundColor: 'white',
+    justifyContent: 'center',
     width: 48,
     height: 20,
     borderRadius: 5,
@@ -77,7 +76,6 @@ const estilos = StyleSheet.create({
   view9: {
     height:30,
     width: 30,
-    backgroundColor:'white',
     borderRadius: '100%',
     alignItems:'center',
     justifyContent: 'center'
@@ -86,7 +84,7 @@ const estilos = StyleSheet.create({
   view4: {
     position: 'relative',
     borderRadius: 10,
-    marginBottom: 19,
+    marginTop: 19,
     width: '48%',
     paddingBottom: 20,
 
@@ -119,9 +117,10 @@ const estilos = StyleSheet.create({
   },
 
   itemImage: {
-    marginTop: 25,
     height: 180,
-    width: '100%',
+    resizeMode: 'stretch',
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
   },
 
 })
