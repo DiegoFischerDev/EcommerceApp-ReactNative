@@ -76,7 +76,7 @@
           "review": 4.8,
           "reviewqtd": 45,
           "tamanho": "G",
-          "quantidade": 5,
+          "quantidade": 2,
           "imagens": [
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
@@ -86,24 +86,140 @@
         },
         {
           "id": 2,
+          "legenda": "Short Praia Ibiza",
+          "preço": 65,
+          "review": 5,
+          "reviewqtd": 82,
+          "tamanho": "G",
+          "quantidade": 6,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        }
+      ],
+      "subTotal": 520,
+      "voucher": 0,
+      "taxaDeEntrega": 0,
+      "valorTotalDoPedido": 520,
+      "status": "Aguardando Confirmação da Loja",
+      "previsãoDeEntrega": "12/04/2023"
+    },
+    {
+      "id": "2302072",
+      "itens": [
+        {
+          "id": 1,
+          "legenda": "Short Praia Dijon",
+          "preço": 65,
+          "review": 4.8,
+          "reviewqtd": 45,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 2,
+          "legenda": "Short Praia Ibiza",
+          "preço": 65,
+          "review": 5,
+          "reviewqtd": 82,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 3,
+          "legenda": "Short Praia Leblon",
+          "preço": 65,
+          "review": 4.7,
+          "reviewqtd": 32,
+          "tamanho": "GG",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon1_oz7kq6.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 4,
           "legenda": "Short Praia Paiva",
           "preço": 65,
           "review": 4.5,
           "reviewqtd": 20,
           "tamanho": "G",
-          "quantidade": 5,
+          "quantidade": 1,
           "imagens": [
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/Praia_Paiva1_ug99g0.jpg",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
           ]
+        },
+        {
+          "id": 5,
+          "legenda": "Short Praia Dijon",
+          "preço": 65,
+          "review": 4.8,
+          "reviewqtd": 45,
+          "tamanho": "M",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 6,
+          "legenda": "Short Praia Ibiza",
+          "preço": 65,
+          "review": 5,
+          "reviewqtd": 82,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano_xdlvgm.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Ibiza_Ciano1_c9yjms.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 7,
+          "legenda": "Short Praia Leblon",
+          "preço": 65,
+          "review": 4.7,
+          "reviewqtd": 32,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon_k6tfwb.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Leblon1_oz7kq6.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
         }
       ],
-      "subTotal": 650,
+      "subTotal": 455,
       "voucher": 100,
       "taxaDeEntrega": 0,
-      "valorTotalDoPedido": 550,
+      "valorTotalDoPedido": 355,
       "status": "Aguardando Confirmação da Loja",
       "previsãoDeEntrega": "12/04/2023"
     }
