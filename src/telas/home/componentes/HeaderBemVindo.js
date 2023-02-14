@@ -43,13 +43,16 @@ useEffect(() => {
   return (
 
   <View style={estilos.view2}>
-      <TouchableOpacity onPress={selecionarImagem}>
-        <Image source={icone} style={estilos.iconeUsuario} />
-      </TouchableOpacity>
-    <View>
-      <Text style={{ fontSize: 10 }}>Bem-Vindo!</Text>
-      <Text style={{ fontSize: 14, fontWeight: 'bold' }}>{UsuarioName}</Text>
+    <View style={{flexDirection:'row', marginTop: 30}}>
+        <TouchableOpacity onPress={selecionarImagem}>
+          <Image source={icone} style={estilos.iconeUsuario} />
+        </TouchableOpacity>
+      <View>
+        <Text style={{ fontSize: 14 }}>Bem-Vindo!</Text>
+        <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{UsuarioName}</Text>
+      </View>
     </View>
+    <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676051398/logopng_oifmjg.png"}} style={estilos.image}></Image>
 
   </View>
 
@@ -60,10 +63,17 @@ export default HeaderBemVindo
 
 const estilos = StyleSheet.create({
 
+  image: {
+    width: 60,
+    height: 60,
+    alignSelf: 'flex-end',
+  },
+
   view2: {
     flexDirection: 'row',
     paddingHorizontal: 20,
     alignItems: 'center',
+    justifyContent: 'space-between'
   },
 
   iconeUsuario: {

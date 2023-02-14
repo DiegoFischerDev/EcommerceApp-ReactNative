@@ -4,17 +4,17 @@ import ItemDoModal from './ItemDoModal'
 import axios from "axios";
 import { baseURL } from "../../../serviços";
 import { obterPedidos } from '../../../serviços'
+import { imprimirNotaFiscal } from "../../../templates/NotaFiscal";
 
 
 const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos, setPedidos}) => {
 
-  console.log(pedidos)
-
   const filtroPedidos = pedidos.filter(function(pedido){
     if (pedido.id == IdDoPedidoQueOMOdalExibe) { 
-      return true}else{
-        return false
-      }
+      return true
+    }else{
+      return false
+    }
   })
 
   async function ExcluirPedido(IdDoPedidoQueOMOdalExibe) {
@@ -35,8 +35,28 @@ const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos,
         <View style={estilos.container}>
           <View style={estilos.modal}>
             <TouchableOpacity onPress={() => {setVisivel(false)}} style={{width:300, paddingTop: 50, paddingBottom:20}}><Text style={{alignSelf:'flex-end', fontSize:20}}>X</Text></TouchableOpacity>
-            <Text style={estilos.texto}>Pedido Numero: {filtroPedidos[0]?.id}</Text>
-            <Text style={estilos.texto}>Valor Total: R${filtroPedidos[0]?.valorTotalDoPedido}</Text>
+            <Text style={{fontWeight:'700'}}>Pedido Numero: {filtroPedidos[0]?.id}</Text>
+
+            <View style={estilos.viewSubTotal}>
+              <Text style={estilos.texto}>SubTotal:</Text>
+              <Text style={estilos.texto}>R${filtroPedidos[0]?.subTotal}</Text>         
+            </View>
+
+            <View style={estilos.viewSubTotal}>
+              <Text style={estilos.texto}>Voucher:</Text>
+              <Text style={estilos.texto}>-R${filtroPedidos[0]?.voucher}</Text>
+            </View>
+
+            <View style={estilos.viewSubTotal}>
+              <Text style={estilos.texto}>Taxa de Entrega:</Text>
+              <Text style={estilos.texto}>R${filtroPedidos[0]?.taxaDeEntrega}</Text>
+            </View>
+
+            <View style={estilos.viewSubTotal}>
+              <Text style={estilos.texto}>Valor Total:</Text>
+              <Text style={estilos.texto}>R${filtroPedidos[0]?.valorTotalDoPedido}</Text>
+            </View>
+
             <View style={{flexDirection:'row'}}>
               <Text style={estilos.texto}>Status: </Text>
               <Text style={[estilos.texto, {color:'orange'}]}>{filtroPedidos[0]?.status}</Text>
@@ -54,7 +74,9 @@ const ModalVerPedido = ({visivel, setVisivel, IdDoPedidoQueOMOdalExibe, pedidos,
 
               <TouchableOpacity
                 style={estilos.botao}
-                onPress={() => {}}
+                onPress={async () => {
+                  await imprimirNotaFiscal(filtroPedidos[0])
+              }}
               >
                 <Text style={estilos.textoBotao}>Gerar Nota Fiscal</Text>
               </TouchableOpacity>
@@ -109,6 +131,11 @@ const estilos = StyleSheet.create({
     marginBottom: 5,
     textAlign: 'left',
     fontSize: 13
+  },
+  viewSubTotal: {
+    flexDirection:'row',
+    justifyContent: 'space-between',
+    width: 140
   },
   botao: {
     borderRadius: 5,

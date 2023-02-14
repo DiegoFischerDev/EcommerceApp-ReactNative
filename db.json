@@ -65,5 +65,47 @@
       "uri": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/promo%C3%A7%C3%A3o2_oj4iku.jpg"
     }
   ],
-  "pedidos": []
+  "pedidos": [
+    {
+      "id": "2302071",
+      "itens": [
+        {
+          "id": 1,
+          "legenda": "Short Praia Dijon",
+          "preço": 65,
+          "review": 4.8,
+          "reviewqtd": 45,
+          "tamanho": "G",
+          "quantidade": 5,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/Dijon_qwejth.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Dijon1_sqquh3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 2,
+          "legenda": "Short Praia Paiva",
+          "preço": 65,
+          "review": 4.5,
+          "reviewqtd": 20,
+          "tamanho": "G",
+          "quantidade": 5,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/Praia_Paiva_kdrqbd.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/Praia_Paiva1_ug99g0.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        }
+      ],
+      "subTotal": 650,
+      "voucher": 100,
+      "taxaDeEntrega": 0,
+      "valorTotalDoPedido": 550,
+      "status": "Aguardando Confirmação da Loja",
+      "previsãoDeEntrega": "12/04/2023"
+    }
+  ]
 }

@@ -14,6 +14,7 @@ const ResumoCompra = () => {
 
   const[voucher, setVoucher] = useState(0)
   let taxaDeEntrega = subtotal === 0 ? 0 : 20;
+  if (subtotal > 200) {taxaDeEntrega = 0};
   let total = subtotal - voucher + taxaDeEntrega;
 
   const [pedidos, setPedidos] = useObterPedidosDaApi([])
@@ -21,15 +22,20 @@ const ResumoCompra = () => {
   let pedido = {
     "id": "230207"+(pedidos.length+1),
     "itens": itens,
+    "subTotal": subtotal,
+    "voucher": voucher,
+    "taxaDeEntrega": taxaDeEntrega,
     "valorTotalDoPedido": total,
     "status": "Aguardando Confirmação da Loja",
     "previsãoDeEntrega": "12/04/2023"
   }
 
+  function calculaVoucher() {
+    if (total > 400) {setVoucher(100)}
+  }
+
   async function EnviarPedido (pedido) {
-    console.log("Enviando novo Pedido...")
     await axios.post(baseURL+'/pedidos', pedido);
-    console.log("Enviou novo Pedido para API")
   }
 
 
@@ -47,7 +53,7 @@ const ResumoCompra = () => {
               placeholderTextColor={'#CACACA'}
             />
           </View>
-          <TouchableOpacity onPress={()=>{setVoucher(100)}} style={estilos.firstOrangeButton}><Text style={{color: 'white', fontSize: 14, fontWeight: 'bold'}}>Aplicar</Text></TouchableOpacity>
+          <TouchableOpacity onPress={()=>{calculaVoucher()}} style={estilos.firstOrangeButton}><Text style={{color: 'white', fontSize: 14, fontWeight: 'bold'}}>Aplicar</Text></TouchableOpacity>
         </View>
 
       <View style={estilos.text}>

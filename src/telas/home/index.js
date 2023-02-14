@@ -54,7 +54,6 @@ const Home = () => {
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <StatusB/>
-        <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676051398/logopng_oifmjg.png"}} style={estilos.image}></Image>
 
         <HeaderBemVindo UsuarioName={nome}/>
 
@@ -103,12 +102,6 @@ const Home = () => {
 export default Home
 
 const estilos = StyleSheet.create({
-
-  image: {
-    width: 80,
-    height: 80,
-    alignSelf: 'center',
-  },
 
   ofertaImage: {
     width: 180,

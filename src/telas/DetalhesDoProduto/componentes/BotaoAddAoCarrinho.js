@@ -4,12 +4,15 @@ import { GlobalContext } from '../../../context/GlobalContext';
 
 const BotaoAddAoCarrinho = ({produto, tamanho, setVisivel, setModalErroVisivel}) => {
 
-  const { adicionarItem } = useContext(GlobalContext);
-
-  function AddProdutoAbreModal(produto) {adicionarItem(produto); setVisivel(true)}
+  const { adicionarItemAoCarrinho } = useContext(GlobalContext);
 
   function AddItemButton(produto) {
     tamanho ? AddProdutoAbreModal(produto) : setModalErroVisivel(true)
+  }
+
+  function AddProdutoAbreModal(produto) {
+    adicionarItemAoCarrinho(produto);
+    setVisivel(true)
   }
 
   return (

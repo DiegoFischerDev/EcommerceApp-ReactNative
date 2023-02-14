@@ -11,7 +11,7 @@ export const ComprasProvider = ({ children }) => {
         obterItensDoCarrinhoArmazenadosLocalmente(setItens)
     }, [])
 
-    const adicionarItem = async (item) => {
+    const adicionarItemAoCarrinho = async (item) => {
         setItens([...itens, item])
 
         await salvarLocalmente([...itens, item])
@@ -62,7 +62,7 @@ export const ComprasProvider = ({ children }) => {
     }, [itens])
 
     return (
-        <GlobalContext.Provider value={{ novaCompra, setNovaCompra, itens, adicionarItem, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
+        <GlobalContext.Provider value={{ novaCompra, setNovaCompra, itens, adicionarItemAoCarrinho, removerItem, esvaziarCarrinho, quantidadeMaisUm, quantidadeMenosUm, subtotal }}>
             {children}
         </GlobalContext.Provider>
     )
