@@ -44,12 +44,13 @@ const estilos = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
 
+    shadowColor: "#000",
     shadowOffset: {
-	  width: 0,
+	  width: 1,
 	  height: 1,
     },
     shadowOpacity: 0.20,
-    shadowRadius: 1.41,
+    shadowRadius: 1.80,
     elevation: 2,
   },
 

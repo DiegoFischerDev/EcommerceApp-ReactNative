@@ -52,7 +52,7 @@ useEffect(() => {
         <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{UsuarioName}</Text>
       </View>
     </View>
-    <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676051398/logopng_oifmjg.png"}} style={estilos.image}></Image>
+    <Image source={{uri: "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"}} style={estilos.image}></Image>
 
   </View>
 

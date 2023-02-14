@@ -1,4 +1,237 @@
 {
+  "Promocoes": [
+    {
+      "id": 1,
+      "legenda": "Short Praia Dijon",
+      "preço": 65,
+      "review": 4.8,
+      "reviewqtd": 45,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon1_sqquh3.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon2_npa4zv.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png"
+    },
+    {
+      "id": 2,
+      "legenda": "Short Praia Ibiza",
+      "preço": 65,
+      "review": 5,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano1_c9yjms.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+    },
+    {
+      "id": 3,
+      "legenda": "Short Praia Leblon",
+      "preço": 65,
+      "review": 4.7,
+      "reviewqtd": 32,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Leblon_k6tfwb.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Leblon1_oz7kq6.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+    },
+    {
+      "id": 4,
+      "legenda": "Short Praia Paiva",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Paiva_kdrqbd.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/Praia_Paiva1_ug99g0.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+    },
+    {
+      "id": 5,
+      "legenda": "Short Army Green",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413421/App%20OKA/Shorts/Short_de_Praia_Army_Green_zrzm6z.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413421/App%20OKA/Shorts/Short_de_Praia_Army_Green2_boepcr.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413422/App%20OKA/Shorts/Short_de_Praia_Army_Green3_nj1hjn.jpg"
+    },
+    {
+      "id": 6,
+      "legenda": "Short Acqua Blue",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413418/App%20OKA/Shorts/Short_de_Praia_Acqua_Blue_c1g4bz.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413421/App%20OKA/Shorts/Short_de_Praia_Acqua_Blue2_sqmspo.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413422/App%20OKA/Shorts/Short_de_Praia_Acqua_Blue3_xke5s1.jpg"
+    },
+    {
+      "id": 7,
+      "legenda": "Short Japaratinga",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413420/App%20OKA/Shorts/Short_de_Praia_Japaratinga_gp1ee5.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413422/App%20OKA/Shorts/Short_de_Praia_Japaratinga2_zvdl0y.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+    },
+    {
+      "id": 8,
+      "legenda": "Camisa Linho Flamingo",
+      "preço": 125,
+      "review": 4.8,
+      "reviewqtd": 45,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo_pby7xj.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo2_ipzrf2.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 9,
+      "legenda": "Camisa Linho Lemon",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon_ek9psp.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon3_ufwlqc.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon2_ofihxr.jpg"
+    },
+    {
+      "id": 10,
+      "legenda": "Camisa Linho Mango",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Mango_nsjm2z.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Mango2_vzlrqy.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 11,
+      "legenda": "Camisa Linho Marinho",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397821/App%20OKA/Camisas/Camisa_Linho_Marinho_ugudfo.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Linho_Marinho2_exo9tz.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 12,
+      "legenda": "Camisa Linho Terracota",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397825/App%20OKA/Camisas/Camisa_Linho_Terracota_b7naip.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397823/App%20OKA/Camisas/Camisa_Linho_Terracota2_ibcp8l.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 13,
+      "legenda": "Camisa Office Azul Listra Bold",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397822/App%20OKA/Camisas/Camisa_Office_Azul_Listra_Bold_srpn4c.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Office_Azul_Listra_Bold2_volzh2.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 14,
+      "legenda": "Camisa Office Listras Bege",
+      "preço": 125,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397827/App%20OKA/Camisas/Camisa_Office_Listras_Bege3_gzsty7.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397827/App%20OKA/Camisas/Camisa_Office_Listras_Bege2_wapj6e.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397825/App%20OKA/Camisas/Camisa_Office_Listras_Bege_jkewzw.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    },
+    {
+      "id": 15,
+      "legenda": "Óculos Miami Transparente",
+      "preço": 89,
+      "review": 4.8,
+      "reviewqtd": 45,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente2_qhmbsz.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente_fckh7e.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente3_ku5rnk.jpg"
+    },
+    {
+      "id": 16,
+      "legenda": "Óculos Roma Azul",
+      "preço": 89,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul2_yvzjps.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul_nkgbcr.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente3_ku5rnk.jpg"
+    },
+    {
+      "id": 17,
+      "legenda": "Óculos Michigan Cinza",
+      "preço": 89,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza3_iw5ljq.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414458/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza2_ekftnm.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza_hbp3y7.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg"
+    },
+    {
+      "id": 18,
+      "legenda": "Pulseira 08",
+      "preço": 39,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_08_ta71yb.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414468/App%20OKA/Acessorios/Pulseira_082_dfxwgr.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414467/App%20OKA/Acessorios/Pulseira_083_alqvjj.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_08_ta71yb.jpg"
+    },
+    {
+      "id": 19,
+      "legenda": "Pulseira 25",
+      "preço": 39,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414467/App%20OKA/Acessorios/Pulseira_25_x5mfyh.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414468/App%20OKA/Acessorios/Pulseira_252_afedf1.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414467/App%20OKA/Acessorios/Pulseira_25_x5mfyh.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414468/App%20OKA/Acessorios/Pulseira_252_afedf1.jpg"
+    },
+    {
+      "id": 20,
+      "legenda": "Pulseira 31",
+      "preço": 39,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg"
+    },
+    {
+      "id": 21,
+      "legenda": "Óculos Michigan Caramelo",
+      "preço": 89,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676415288/App%20OKA/Acessorios/%C3%93culos_Michigan_Caramelo3_y8lbew.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676415288/App%20OKA/Acessorios/%C3%93culos_Michigan_Caramelo_mnmac4.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676415288/App%20OKA/Acessorios/%C3%93culos_Michigan_Caramelo2_unrfuk.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg"
+    }
+  ],
   "Shorts": [
     {
       "id": 1,
@@ -41,6 +274,39 @@
       "reviewqtd": 20,
       "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Praia_Paiva_kdrqbd.jpg",
       "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/Praia_Paiva1_ug99g0.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+    },
+    {
+      "id": 5,
+      "legenda": "Short Army Green",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413421/App%20OKA/Shorts/Short_de_Praia_Army_Green_zrzm6z.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413421/App%20OKA/Shorts/Short_de_Praia_Army_Green2_boepcr.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413422/App%20OKA/Shorts/Short_de_Praia_Army_Green3_nj1hjn.jpg"
+    },
+    {
+      "id": 6,
+      "legenda": "Short Acqua Blue",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413418/App%20OKA/Shorts/Short_de_Praia_Acqua_Blue_c1g4bz.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413421/App%20OKA/Shorts/Short_de_Praia_Acqua_Blue2_sqmspo.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413422/App%20OKA/Shorts/Short_de_Praia_Acqua_Blue3_xke5s1.jpg"
+    },
+    {
+      "id": 7,
+      "legenda": "Short Japaratinga",
+      "preço": 65,
+      "review": 4.5,
+      "reviewqtd": 20,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413420/App%20OKA/Shorts/Short_de_Praia_Japaratinga_gp1ee5.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676413422/App%20OKA/Shorts/Short_de_Praia_Japaratinga2_zvdl0y.jpg",
       "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
       "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
     }
@@ -122,6 +388,85 @@
       "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397827/App%20OKA/Camisas/Camisa_Office_Listras_Bege2_wapj6e.jpg",
       "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397825/App%20OKA/Camisas/Camisa_Office_Listras_Bege_jkewzw.jpg",
       "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+    }
+  ],
+  "Acessorios": [
+    {
+      "id": 1,
+      "legenda": "Óculos Miami Transparente",
+      "preço": 89,
+      "review": 4.8,
+      "reviewqtd": 45,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente2_qhmbsz.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente_fckh7e.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente3_ku5rnk.jpg"
+    },
+    {
+      "id": 2,
+      "legenda": "Óculos Roma Azul",
+      "preço": 89,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul2_yvzjps.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul_nkgbcr.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente3_ku5rnk.jpg"
+    },
+    {
+      "id": 3,
+      "legenda": "Óculos Michigan Cinza",
+      "preço": 89,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza3_iw5ljq.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414458/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza2_ekftnm.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza_hbp3y7.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg"
+    },
+    {
+      "id": 4,
+      "legenda": "Pulseira 08",
+      "preço": 39,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_08_ta71yb.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414468/App%20OKA/Acessorios/Pulseira_082_dfxwgr.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414467/App%20OKA/Acessorios/Pulseira_083_alqvjj.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_08_ta71yb.jpg"
+    },
+    {
+      "id": 5,
+      "legenda": "Pulseira 25",
+      "preço": 39,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414467/App%20OKA/Acessorios/Pulseira_25_x5mfyh.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414468/App%20OKA/Acessorios/Pulseira_252_afedf1.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414467/App%20OKA/Acessorios/Pulseira_25_x5mfyh.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414468/App%20OKA/Acessorios/Pulseira_252_afedf1.jpg"
+    },
+    {
+      "id": 6,
+      "legenda": "Pulseira 31",
+      "preço": 39,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg"
+    },
+    {
+      "id": 7,
+      "legenda": "Óculos Michigan Caramelo",
+      "preço": 89,
+      "review": 4.9,
+      "reviewqtd": 82,
+      "imagem1": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676415288/App%20OKA/Acessorios/%C3%93culos_Michigan_Caramelo3_y8lbew.jpg",
+      "imagem2": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676415288/App%20OKA/Acessorios/%C3%93culos_Michigan_Caramelo_mnmac4.jpg",
+      "imagem3": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676415288/App%20OKA/Acessorios/%C3%93culos_Michigan_Caramelo2_unrfuk.jpg",
+      "imagem4": "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg"
     }
   ],
   "anuncios": [
@@ -213,6 +558,122 @@
       "voucher": 0,
       "taxaDeEntrega": 0,
       "valorTotalDoPedido": 380,
+      "status": "Aguardando Confirmação da Loja",
+      "previsãoDeEntrega": "12/04/2023"
+    },
+    {
+      "id": "2302072",
+      "itens": [
+        {
+          "id": 1,
+          "legenda": "Camisa Linho Flamingo",
+          "preço": 125,
+          "review": 4.8,
+          "reviewqtd": 45,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo_pby7xj.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo2_ipzrf2.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 2,
+          "legenda": "Camisa Linho Marinho",
+          "preço": 125,
+          "review": 4.9,
+          "reviewqtd": 82,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397821/App%20OKA/Camisas/Camisa_Linho_Marinho_ugudfo.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Linho_Marinho2_exo9tz.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
+          ]
+        },
+        {
+          "id": 3,
+          "legenda": "Óculos Roma Azul",
+          "preço": 89,
+          "review": 4.9,
+          "reviewqtd": 82,
+          "tamanho": "M",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul2_yvzjps.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul_nkgbcr.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente3_ku5rnk.jpg"
+          ]
+        },
+        {
+          "id": 4,
+          "legenda": "Óculos Michigan Cinza",
+          "preço": 89,
+          "review": 4.9,
+          "reviewqtd": 82,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza3_iw5ljq.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414458/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza2_ekftnm.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza_hbp3y7.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg"
+          ]
+        },
+        {
+          "id": 5,
+          "legenda": "Pulseira 31",
+          "preço": 39,
+          "review": 4.9,
+          "reviewqtd": 82,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg"
+          ]
+        },
+        {
+          "id": 6,
+          "legenda": "Short Praia Dijon",
+          "preço": 65,
+          "review": 4.8,
+          "reviewqtd": 45,
+          "tamanho": "G",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon1_sqquh3.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon2_npa4zv.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png"
+          ]
+        },
+        {
+          "id": 7,
+          "legenda": "Short Praia Ibiza",
+          "preço": 65,
+          "review": 5,
+          "reviewqtd": 82,
+          "tamanho": "GG",
+          "quantidade": 1,
+          "imagens": [
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano1_c9yjms.jpg",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
+            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
+          ]
+        }
+      ],
+      "subTotal": 597,
+      "voucher": 100,
+      "taxaDeEntrega": 0,
+      "valorTotalDoPedido": 497,
       "status": "Aguardando Confirmação da Loja",
       "previsãoDeEntrega": "12/04/2023"
     }
