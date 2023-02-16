@@ -491,178 +491,17 @@
   ],
   "pedidos": [
     {
-      "id": "2302071",
+      "id": "2302073",
       "itens": [
         {
           "id": 1,
-          "legenda": "Short Praia Dijon",
-          "preço": 65,
-          "review": 4.8,
-          "reviewqtd": 45,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon1_sqquh3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon2_npa4zv.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png"
-          ]
-        },
-        {
-          "id": 2,
           "legenda": "Short Praia Ibiza",
           "preço": 65,
           "review": 5,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano1_c9yjms.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 3,
-          "legenda": "Camisa Linho Lemon",
-          "preço": 125,
-          "review": 4.9,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon_ek9psp.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon3_ufwlqc.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397816/App%20OKA/Camisas/Camisa_Linho_Lemon2_ofihxr.jpg"
-          ]
-        },
-        {
-          "id": 4,
-          "legenda": "Camisa Linho Marinho",
-          "preço": 125,
-          "review": 4.9,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397821/App%20OKA/Camisas/Camisa_Linho_Marinho_ugudfo.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Linho_Marinho2_exo9tz.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
-          ]
-        }
-      ],
-      "subTotal": 380,
-      "voucher": 0,
-      "taxaDeEntrega": 0,
-      "valorTotalDoPedido": 380,
-      "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
-    },
-    {
-      "id": "2302072",
-      "itens": [
-        {
-          "id": 1,
-          "legenda": "Camisa Linho Flamingo",
-          "preço": 125,
-          "review": 4.8,
-          "reviewqtd": 45,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo_pby7xj.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397817/App%20OKA/Camisas/Camisa_Linho_Flamingo2_ipzrf2.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 2,
-          "legenda": "Camisa Linho Marinho",
-          "preço": 125,
-          "review": 4.9,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397821/App%20OKA/Camisas/Camisa_Linho_Marinho_ugudfo.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397826/App%20OKA/Camisas/Camisa_Linho_Marinho2_exo9tz.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676397819/App%20OKA/Camisas/Camisa_Medidas_idlmi3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676050777/App%20OKA/logo_zexbmx.png"
-          ]
-        },
-        {
-          "id": 3,
-          "legenda": "Óculos Roma Azul",
-          "preço": 89,
-          "review": 4.9,
           "reviewqtd": 82,
           "tamanho": "M",
           "quantidade": 1,
           "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul2_yvzjps.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Roma_Azul_nkgbcr.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414462/App%20OKA/Acessorios/%C3%93culos_Miami_Transparente3_ku5rnk.jpg"
-          ]
-        },
-        {
-          "id": 4,
-          "legenda": "Óculos Michigan Cinza",
-          "preço": 89,
-          "review": 4.9,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza3_iw5ljq.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414458/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza2_ekftnm.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414459/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza_hbp3y7.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/%C3%93culos_Michigan_Cinza4_iohi0n.jpg"
-          ]
-        },
-        {
-          "id": 5,
-          "legenda": "Pulseira 31",
-          "preço": 39,
-          "review": 4.9,
-          "reviewqtd": 82,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414465/App%20OKA/Acessorios/Pulseira_31_gwngn3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676414470/App%20OKA/Acessorios/Pulseira_312_pcvkow.jpg"
-          ]
-        },
-        {
-          "id": 6,
-          "legenda": "Short Praia Dijon",
-          "preço": 65,
-          "review": 4.8,
-          "reviewqtd": 45,
-          "tamanho": "G",
-          "quantidade": 1,
-          "imagens": [
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676048488/App%20OKA/Shorts/Dijon_qwejth.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon1_sqquh3.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Dijon2_npa4zv.jpg",
-            "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png"
-          ]
-        },
-        {
-          "id": 7,
-          "legenda": "Short Praia Ibiza",
-          "preço": 65,
-          "review": 5,
-          "reviewqtd": 82,
-          "tamanho": "GG",
-          "quantidade": 1,
-          "imagens": [
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano_xdlvgm.jpg",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049544/App%20OKA/Shorts/Ibiza_Ciano1_c9yjms.jpg",
             "https://res.cloudinary.com/di9oiqvom/image/upload/v1676049545/App%20OKA/Shorts/tamanhos_xjmtca.png",
@@ -670,12 +509,12 @@
           ]
         }
       ],
-      "subTotal": 597,
-      "voucher": 100,
-      "taxaDeEntrega": 0,
-      "valorTotalDoPedido": 497,
+      "subTotal": 65,
+      "voucher": 0,
+      "taxaDeEntrega": 20,
+      "valorTotalDoPedido": 85,
       "status": "Aguardando Confirmação da Loja",
-      "previsãoDeEntrega": "12/04/2023"
+      "previsãoDeEntrega": "sábado, 18 de fev. de 2023"
     }
   ]
 }

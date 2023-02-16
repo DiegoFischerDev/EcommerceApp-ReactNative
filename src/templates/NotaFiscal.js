@@ -112,7 +112,7 @@ export const body = (itens) => {
     
     <div class="ItensDiv">
       <h2 style="text-align: center; width: 100%;">OUTRAS INFORMAÇÕES</h2>
-      <h3 style="margin-bottom: 20px;">Previsão de entrega para o dia: 12/04/2023</h2>
+      <h3 style="margin-bottom: 20px;">Previsão de entrega: ${itens.previsãoDeEntrega}</h2>
     </div>   
     `
 

@@ -16,7 +16,7 @@ const MeusPedidosCard = ({id, setVisivel, SetIdDoPedidoQueOMOdalExibe, valorTota
           <Text>Status: </Text>
           <Text style={{color: 'orange'}}>{status}</Text>
         </View>
-        <Text>Entrega Prevista: {dataDaEntrega}</Text>
+        <Text>Previsão de Entrega: {dataDaEntrega}</Text>
       </View>
     </View>
   )

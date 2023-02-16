@@ -19,6 +19,16 @@ const ResumoCompra = () => {
 
   const [pedidos, setPedidos] = useObterPedidosDaApi([])
 
+  let date = new Date()
+  date.setDate(date.getDate()+3)
+  let options = {
+    weekday: "long",
+    year: "numeric",
+    month: "short",
+    day: "numeric", 
+    };
+  let dateNewFormat = new Intl.DateTimeFormat('pt-BR', options).format(date)
+
   let pedido = {
     "id": "230207"+(pedidos.length+1),
     "itens": itens,
@@ -27,7 +37,7 @@ const ResumoCompra = () => {
     "taxaDeEntrega": taxaDeEntrega,
     "valorTotalDoPedido": total,
     "status": "Aguardando Confirmação da Loja",
-    "previsãoDeEntrega": "12/04/2023"
+    "previsãoDeEntrega": dateNewFormat
   }
 
   function calculaVoucher() {
